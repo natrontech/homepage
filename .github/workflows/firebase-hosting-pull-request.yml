@@ -38,5 +38,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GIGU_8ED82 }}'
-          projectId: gigu-8ed82
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NATRON_D31F5 }}'
+          projectId: natron-d31f5
