@@ -29,7 +29,7 @@ export default function Navigation(props: any) {
             className="relative h-screen"
         >
             <div
-                className="text-center sm:text-left absolute top-1/2 left-1/2 sm:left-20 sm:-translate-x-0 w-full -translate-x-1/2 -translate-y-1/2"
+                className="text-center space-y-10 sm:text-left absolute top-1/2 left-1/2 sm:left-20 sm:-translate-x-0 w-full -translate-x-1/2 -translate-y-1/2"
             >
                 {
                     navigation.map((item: any, index: number) => {
@@ -38,7 +38,7 @@ export default function Navigation(props: any) {
                                 <span
                                     className={classNames(
                                         item.current ? "inlined-text text-white" : "outlined-text text-primary",
-                                        "font-bold text-6xl sm:text-xxl cursor-pointer sm:tracking-wider tracking-widest sm:hover:text-white active:hover:text-white transition-all duration-150 sm:duration-300 ease-in-out"
+                                        "font-bold text-5xl sm:text-xxl cursor-pointer sm:tracking-wider tracking-widest sm:hover:text-white active:hover:text-white transition-all duration-150 sm:duration-300 ease-in-out"
                                     )}
                                     onClick={() => {
                                         router.push(item.link)
