@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import ExportedImage from 'next-image-export-optimizer'
 import Link from 'next/link'
+import Button, { ButtonType } from '../components/general/Button'
 import Herosection from '../components/landingpage/Herosection'
 
 const Home: NextPage = () => {
@@ -12,6 +13,8 @@ const Home: NextPage = () => {
         className="sm:px-20 px-2"
       >
         <Herosection />
+      </div>
+      <div>
       </div>
     </div>
   )
