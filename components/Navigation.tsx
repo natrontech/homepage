@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router"
 import { classNames } from "../lib/design";
 
@@ -15,6 +16,11 @@ export default function Navigation(props: any) {
             name: "About us",
             link: "/about",
             current: router.pathname === "/about"
+        },
+        {
+            name: "References",
+            link: "/references",
+            current: router.pathname === "/references"
         }
     ]
 
@@ -32,8 +38,11 @@ export default function Navigation(props: any) {
                                 <span
                                     className={classNames(
                                         item.current ? "inlined-text text-white" : "outlined-text text-primary",
-                                        "font-bold text-6xl sm:text-9xl cursor-pointer sm:tracking-wider tracking-widest sm:hover:text-white active:hover:text-white transition-all duration-150 sm:duration-300 ease-in-out"
+                                        "font-bold text-6xl sm:text-xxl cursor-pointer sm:tracking-wider tracking-widest sm:hover:text-white active:hover:text-white transition-all duration-150 sm:duration-300 ease-in-out"
                                     )}
+                                    onClick={() => {
+                                        router.push(item.link)
+                                    }}
                                 >
                                     {item.name}
                                 </span>
@@ -41,12 +50,48 @@ export default function Navigation(props: any) {
                         )
                     })
                 }
+
+            </div>
+            <div
+                className="absolute grid w-full sm:w-auto grid-cols-2 sm:grid-cols-1 sm:bottom-20 sm:right-20 bottom-5"
+            >
                 <div
-                    className="relative"
+                    className="sm:mb-10 mx-5 sm:mx-0"
                 >
-
+                    <h1
+                        className="text-white text-xl sm:text-xl font-GilroyBold mb-1"
+                    >
+                        Contact
+                    </h1>
+                    <a
+                        href="mailto:info@natron.io"
+                        className="cursor-pointer"
+                    >
+                        info@natron.io
+                    </a>
                 </div>
-
+                <div
+                    className="mx-5 sm:mx-0"
+                >
+                    <h1
+                        className="text-white text-xl sm:text-xl font-GilroyBold mb-1"
+                    >
+                        Legal sites
+                    </h1>
+                    <Link
+                        href="/imprint"
+                        className="cursor-pointer"
+                    >
+                        Imprint
+                    </Link>
+                    <br />
+                    <Link
+                        href="/privacy-policy"
+                        className="cursor-pointer"
+                    >
+                        Privacy policy
+                    </Link>
+                </div>
             </div>
         </div>
     )
