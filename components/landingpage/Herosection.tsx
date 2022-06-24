@@ -3,14 +3,26 @@ import ExportedImage from "next-image-export-optimizer";
 export default function Herosection() {
     return (
         <div
-            className=""
+            className="relative w-auto h-screen mx-auto"
         >
             <div
-                className=""
+                className="sm:block hidden"
             >
                 <ExportedImage
-                    className="w-12 h-12 sm:w-20 sm:h-20 pointer-events-none"
+                    className="pointer-events-none"
                     src="/images/quotes/hero-quote.png"
+                    alt="Catch Phrase"
+                    layout="fill"
+                    objectFit='contain'
+                // unoptimized={true}
+                />
+            </div>
+            <div
+                className="sm:hidden block"
+            >
+                <ExportedImage
+                    className="pointer-events-none"
+                    src="/images/quotes/hero-quote-mobile.png"
                     alt="Catch Phrase"
                     layout="fill"
                     objectFit='contain'

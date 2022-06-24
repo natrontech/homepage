@@ -6,10 +6,10 @@ import Herosection from '../components/landingpage/Herosection'
 const Home: NextPage = () => {
   return (
     <div
-      className="pt-20"
+      className=""
     >
       <div
-        className="px-20"
+        className="sm:px-20 px-2"
       >
         <Herosection />
       </div>
