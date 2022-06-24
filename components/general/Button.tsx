@@ -1,3 +1,5 @@
+import { classNames } from "../../lib/design";
+
 export enum ButtonType {
     Primary = "primary",
     Secondary = "secondary",
@@ -7,11 +9,18 @@ export enum ButtonType {
 
 export default function Button({ buttonType, buttonText, onClick }: { buttonType: ButtonType, buttonText: string, onClick?: () => void }) {
 
+    const hoverAnimationClasses = "sm:hover:-translate-x-2 sm:hover:translate-y-2 active:hover:-translate-x-2 active:hover:translate-y-2 transition-all duration-150 ease-in-out";
+    const defaultStyleClasses = "font-GilroyBold text-lg py-4 px-12 w-full"
+
     switch (buttonType) {
         case ButtonType.Primary:
             return (
                 <button
-                    className="bg-primary text-white font-GilroyBold text-lg py-4 px-12"
+                    className={classNames(
+                        hoverAnimationClasses,
+                        defaultStyleClasses,
+                        "bg-primary text-white"
+                    )}
                     onClick={onClick}
                 >
                     {buttonText}
@@ -20,16 +29,24 @@ export default function Button({ buttonType, buttonText, onClick }: { buttonType
         case ButtonType.Secondary:
             return (
                 <button
-                    className="bg-white text-primary font-GilroyBold text-lg py-4 px-12"
+                    className={classNames(
+                        hoverAnimationClasses,
+                        defaultStyleClasses,
+                        "bg-white text-primary"
+                    )}
                     onClick={onClick}
                 >
                     {buttonText}
-                </button>
+                </button >
             )
         case ButtonType.PrimaryOutline:
             return (
                 <button
-                    className="border-primary border-4 text-primary font-GilroyBold text-lg py-3 px-11"
+                    className={classNames(
+                        hoverAnimationClasses,
+                        defaultStyleClasses,
+                        "border-primary border-4 text-primary"
+                    )}
                     onClick={onClick}
                 >
                     {buttonText}
@@ -38,7 +55,11 @@ export default function Button({ buttonType, buttonText, onClick }: { buttonType
         case ButtonType.SecondaryOutline:
             return (
                 <button
-                    className="border-white border-4 text-white font-GilroyBold text-lg py-3 px-11"
+                    className={classNames(
+                        hoverAnimationClasses,
+                        defaultStyleClasses,
+                        "border-white border-4 text-white"
+                    )}
                     onClick={onClick}
                 >
                     {buttonText}

@@ -3,6 +3,7 @@ import ExportedImage from 'next-image-export-optimizer'
 import Link from 'next/link'
 import Button, { ButtonType } from '../components/general/Button'
 import Herosection from '../components/landingpage/Herosection'
+import Offering from '../components/landingpage/offering/Offering'
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +15,10 @@ const Home: NextPage = () => {
       >
         <Herosection />
       </div>
-      <div>
+      <div
+        className='sm:px-20 px-2'
+      >
+        <Offering />
       </div>
     </div>
   )
