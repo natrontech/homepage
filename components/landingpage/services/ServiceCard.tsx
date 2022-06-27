@@ -7,10 +7,10 @@ export default function ServiceCard({ image, title, description }: { image: stri
     const router = useRouter();
 
     return (
-        <Tilt
+        <div
             className="border-8 border-white"
         >
-            <div
+            <Tilt
                 className="relative sm:h-72 h-52"
             >
                 <ExportedImage
@@ -19,7 +19,7 @@ export default function ServiceCard({ image, title, description }: { image: stri
                     alt="Catch Phrase"
                     layout="fill"
                 />
-            </div>
+            </Tilt>
             <hr
                 className="border-4 border-white"
             />
@@ -40,10 +40,10 @@ export default function ServiceCard({ image, title, description }: { image: stri
                     buttonType={ButtonType.Primary}
                     buttonText="Learn More"
                     onClick={() => {
-                        router.push("/services");
+                        
                     }}
                 />
             </div>
-        </Tilt>
+        </div>
     )
 }
