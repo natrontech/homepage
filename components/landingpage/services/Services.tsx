@@ -1,6 +1,7 @@
 import ExportedImage from "next-image-export-optimizer";
 import ServiceCard from "./ServiceCard";
 import ServiceDescription from "./ServiceDescription";
+import ServiceModal from "./ServiceModal";
 
 export default function Services() {
     return (

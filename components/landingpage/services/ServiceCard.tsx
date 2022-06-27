@@ -2,9 +2,15 @@ import ExportedImage from "next-image-export-optimizer";
 import { useRouter } from "next/router";
 import Button, { ButtonType } from "../../general/Button";
 import Tilt from 'react-parallax-tilt';
+import { useState } from "react";
+import ServiceModal from "./ServiceModal";
 
 export default function ServiceCard({ image, title, description }: { image: string, title: string, description: string }) {
     const router = useRouter();
+    const [showModal, setShowModal] = useState(false);
+
+
+    console.log(showModal)
 
     return (
         <div
@@ -45,11 +51,15 @@ export default function ServiceCard({ image, title, description }: { image: stri
                 <Button
                     buttonType={ButtonType.Primary}
                     buttonText="Learn More"
-                    onClick={() => {
-
-                    }}
+                    onClick={() => setShowModal(true)}
                 />
             </div>
+            <ServiceModal
+                showModal={showModal}
+                setShowModal={setShowModal}
+                title={title}
+                description={description}
+            />
         </div>
     )
 }
