@@ -4012,6 +4012,11 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-parallax-tilt@^1.7.43:
+  version "1.7.43"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.7.43.tgz#4c5a0871433679f8e4ffc2aa7f5d16f1ae90bd37"
+  integrity sha512-GvPobRi71SFiMYX5B+lHVRjONs8wKfiUX5fve0Q9b3APY3s42UNnGPlTKddhxHTwQzjQt3muSHERGSyJDwqGXg==
+
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"

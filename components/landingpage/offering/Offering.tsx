@@ -1,16 +1,24 @@
+import ExportedImage from "next-image-export-optimizer";
 import OfferingCard from "./OfferingCard";
 
 export default function Offering() {
     return (
         <div>
             <div
-                className="mb-20"
+                className="sm:mb-20 mb-10"
             >
-                <h1
-                    className="sm:text-9xl text-3xl font-GilroyBold text-center"
+                <div
+                    className="relative w-auto sm:h-96 h-16 mx-auto"
                 >
-                    What <span className="text-primary">we</span> can <span className="text-primary">offer</span> you
-                </h1>
+                    <ExportedImage
+                        className="pointer-events-none"
+                        src="/images/quotes/services-quote.png"
+                        alt="Catch Phrase"
+                        layout="fill"
+                        objectFit='contain'
+                    // unoptimized={true}
+                    />
+                </div>
             </div>
             <div
                 className="grid sm:grid-cols-3 grid-cols-1 gap-8"
