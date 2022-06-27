@@ -33,7 +33,7 @@ export default function ServiceModal(props: any) {
                     {props.title}
                 </h1>
                 <p
-                    className="text-sm mb-4 text-center"
+                    className="text-sm mb-4 text-left px-6"
                 >
                     {props.description}
                 </p>
