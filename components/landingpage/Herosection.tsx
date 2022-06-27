@@ -4,6 +4,7 @@ export default function Herosection() {
     return (
         <div
             className="relative w-auto h-screen mx-auto"
+            id="hero"
         >
             <div
                 className="sm:block hidden"

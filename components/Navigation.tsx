@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router"
 import { classNames } from "../lib/design";
-
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function Navigation(props: any) {
     const router = useRouter();
@@ -9,18 +9,18 @@ export default function Navigation(props: any) {
     const navigation = [
         {
             name: "Services",
-            link: "/services",
-            current: router.pathname === "/services"
+            link: "#services",
+            current: router.pathname === "#services"
         },
         {
             name: "About us",
-            link: "/about",
-            current: router.pathname === "/about"
+            link: "#about",
+            current: router.pathname === "#about"
         },
         {
             name: "References",
-            link: "/references",
-            current: router.pathname === "/references"
+            link: "#references",
+            current: router.pathname === "#references"
         }
     ]
 
@@ -42,6 +42,7 @@ export default function Navigation(props: any) {
                                     )}
                                     onClick={() => {
                                         router.push(item.link)
+                                        props.setOpen(false)
                                     }}
                                 >
                                     {item.name}

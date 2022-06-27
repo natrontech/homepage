@@ -11,7 +11,7 @@ export default function Navbar(props: any) {
 
     const handleLogoClick = () => {
         setOpen(false);
-        router.push('/');
+        router.push('/#hero');
     } 
 
     return (
@@ -47,7 +47,7 @@ export default function Navbar(props: any) {
                     "bg-primary h-screen w-full z-10 fixed overflow-hidden transition-all duration-200 ease-in-out"
                 )}
             >
-                <Navigation />
+                <Navigation setOpen={setOpen} />
             </div>
         </div>
     )

@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Button, { ButtonType } from "../../general/Button";
 import Tilt from 'react-parallax-tilt';
 
-export default function OfferingCard({ image, title, description }: { image: string, title: string, description: string }) {
+export default function ServiceCard({ image, title, description }: { image: string, title: string, description: string }) {
     const router = useRouter();
 
     return (
