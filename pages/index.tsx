@@ -11,12 +11,12 @@ const Home: NextPage = () => {
       className=""
     >
       <div
-        className="sm:px-20 px-2"
+        className="sm:px-20 px-4"
       >
         <Herosection />
       </div>
       <div
-        className='sm:px-20 px-2'
+        className='sm:px-20 px-4'
       >
         <Services />
       </div>

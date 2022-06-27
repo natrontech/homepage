@@ -6,21 +6,23 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 export default function Navigation(props: any) {
     const router = useRouter();
 
+    console.log(router.asPath);
+
     const navigation = [
         {
             name: "Services",
-            link: "#services",
-            current: router.pathname === "#services"
+            link: "/#services",
+            current: router.asPath === "/#services"
         },
         {
             name: "About us",
-            link: "#about",
-            current: router.pathname === "#about"
+            link: "/#about",
+            current: router.asPath === "/#about"
         },
         {
             name: "References",
-            link: "#references",
-            current: router.pathname === "#references"
+            link: "/#references",
+            current: router.asPath === "/#references"
         }
     ]
 

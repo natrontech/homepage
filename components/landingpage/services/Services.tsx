@@ -1,5 +1,6 @@
 import ExportedImage from "next-image-export-optimizer";
 import ServiceCard from "./ServiceCard";
+import ServiceDescription from "./ServiceDescription";
 
 export default function Services() {
     return (
@@ -39,6 +40,11 @@ export default function Services() {
                     title="Cloud ready"
                     description="We setup your cloud infrastructure the right way so you can work without any problems."
                 />
+            </div>
+            <div
+                className="py-20"
+            >
+                <ServiceDescription />
             </div>
         </div>
     )
