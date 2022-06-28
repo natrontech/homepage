@@ -8,9 +8,6 @@ export default function MateCard({ image, name, position }: { image: string, nam
     const router = useRouter();
     const [showModal, setShowModal] = useState(false);
 
-
-    console.log(showModal)
-
     return (
         <div
             className="border-8 border-white sm:w-full w-full m-auto"
