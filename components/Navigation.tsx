@@ -5,8 +5,6 @@ import { classNames } from "../lib/design";
 export default function Navigation(props: any) {
     const router = useRouter();
 
-    console.log(router.asPath);
-
     const navigation = [
         {
             name: "Services",

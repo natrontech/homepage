@@ -7,11 +7,27 @@ export default function Services() {
     return (
         <div>
             <div
-                className="sm:mb-20 mb-10"
+                className="sm:mb-10 mb-1 pt-20"
                 id="services"
             >
+                <h1
+                    className="text-6xl sm:hidden block font-GilroyBold text-center mb-20 sm:mb-0"
+                >
+                    What&nbsp;
+                    <span
+                        className="text-primary"
+                    >
+                        we
+                    </span>
+                    &nbsp; can offer &nbsp;
+                    <span
+                        className="text-primary"
+                    >
+                        you
+                    </span>
+                </h1>
                 <div
-                    className="relative w-auto sm:h-96 h-16 mx-auto"
+                    className="relative w-auto h-96 sm:block hidden mx-auto"
                 >
                     <ExportedImage
                         className="pointer-events-none"
@@ -43,7 +59,7 @@ export default function Services() {
                 />
             </div>
             <div
-                className="py-20"
+                className="pt-20"
             >
                 <ServiceDescription />
             </div>
