@@ -20,6 +20,11 @@ export default function Navigation(props: any) {
             name: "References",
             link: "/#references",
             current: router.asPath === "/#references"
+        },
+        {
+            name: "Side Projects",
+            link: "/#sideprojects",
+            current: router.asPath === "/#sideprojects"
         }
     ]
 
@@ -69,6 +74,10 @@ export default function Navigation(props: any) {
                     >
                         info@natron.io
                     </a>
+                    <p>
+                        Weissenbühlweg 16 <br />
+                        3007 Bern
+                    </p>
                 </div>
                 <div
                     className="mx-5 sm:mx-0"
