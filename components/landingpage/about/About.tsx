@@ -1,7 +1,16 @@
+import { classNames } from "../../../lib/design";
 import History from "./History";
 import MateCard from "./MateCard";
 
 export default function About() {
+    const mates = [
+        {
+            image: "/images/mates/janlauber.jpeg",
+            name: "Jan Lauber",
+            position: "Founder",
+            email: "jan.lauber@natron.io"
+        }
+    ]
     return (
         <div
             id="about"
@@ -18,23 +27,31 @@ export default function About() {
                 &nbsp;are helping you
             </h1>
             <div
-                className="grid sm:grid-cols-3 grid-cols-1 gap-8"
+                className={classNames(
+                    mates.length == 2 ? "sm:grid-cols-2" : "sm:grid-cols-3",
+                    "grid grid-cols-1 gap-8"
+                )}
             >
-                <MateCard 
-                    image="/images/mates/janlauber.jpeg"
-                    name="Jan Lauber"
-                    position="Founder"
-                />
-                <MateCard 
-                    image="/images/mates/generic.jpeg"
-                    name="Sample Mate"
-                    position="Sample Position"
-                />
-                <MateCard 
-                    image="/images/mates/generic.jpeg"
-                    name="Sample Mate"
-                    position="Sample Position"
-                />
+                {
+                    mates.length < 2 ? (
+                        <div 
+                            className="sm:block hidden"
+                        />
+                    ) : null
+                }
+                {
+                    mates.map((item: any, index: number) => {
+                        return (
+                            <MateCard
+                                key={index}
+                                image={item.image}
+                                name={item.name}
+                                position={item.position}
+                                email={item.email}
+                            />
+                        )
+                    })
+                }
             </div>
             <div
                 className="pt-20"
