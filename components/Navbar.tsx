@@ -12,14 +12,14 @@ export default function Navbar(props: any) {
     const handleLogoClick = () => {
         setOpen(false);
         router.push('/#hero');
-    } 
+    }
 
     return (
         <div>
             <div
                 className={classNames(
-                    isOpen ? 'z-50 opacity-100 scale-100' : 'opacity-0 scale-95 -z-50 -translate-x-52',
-                    'fixed top-5 left-5 transition-all duration-500 ease-in-out',
+                    isOpen ? 'z-50 opacity-100 scale-100' : 'opacity-0 scale-0 -z-50 translate-x-96',
+                    'fixed top-5 left-5 transition-all duration-300 ease-in-out',
                 )}
             >
                 <button
@@ -33,7 +33,7 @@ export default function Navbar(props: any) {
                 </button>
             </div>
             <div
-                className='fixed right-7 top-7 z-20'
+                className="fixed right-5 top-5 sm:right-10 z-20"
             >
                 <Hamburger
                     toggled={isOpen}
@@ -43,12 +43,20 @@ export default function Navbar(props: any) {
             </div>
             <div
                 className={classNames(
-                    isOpen ? 'fixed top-0 left-0 w-full h-screen z-10 opacity-100 scale-100' : 'opacity-0 scale-95 -translate-x-full -z-50',
-                    "bg-primary h-screen w-full z-10 fixed overflow-hidden transition-all duration-200 ease-in-out"
+                    isOpen ? "w-full h-full top-0 right-0" : "w-12 h-12 right-5 top-5 sm:right-10",
+                    "fixed  z-10 bg-primary transition-all duration-150 ease-in-out rounded-s,"
+                )}
+            >
+
+            </div>
+            <div
+                className={classNames(
+                    isOpen ? 'fixed top-0 left-0 w-full h-screen z-10 opacity-100 scale-100' : 'opacity-0 scale-95 translate-x-full -z-50',
+                    " h-screen w-full z-10 fixed overflow-hidden transition-all duration-200 ease-in-out"
                 )}
             >
                 <Navigation setOpen={setOpen} />
             </div>
-        </div>
+        </div >
     )
 }
