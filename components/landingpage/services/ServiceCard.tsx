@@ -2,24 +2,36 @@ import ExportedImage from "next-image-export-optimizer";
 import { useRouter } from "next/router";
 import Button, { ButtonType } from "../../general/Button";
 import Tilt from 'react-parallax-tilt';
+import { useState } from "react";
+import ServiceModal from "./ServiceModal";
 
 export default function ServiceCard({ image, title, description }: { image: string, title: string, description: string }) {
     const router = useRouter();
+    const [showModal, setShowModal] = useState(false);
+
+
+    console.log(showModal)
 
     return (
-        <Tilt
-            className="border-8 border-white"
+        <div
+            className="border-8 border-white sm:w-auto xl:w-96 w-auto m-auto"
         >
             <div
-                className="relative sm:h-72 h-52"
+                className="h-52 sm:hover:scale-110 active:hover:scale-105 transition-all duration-150 ease-in-out"
             >
-                <ExportedImage
-                    className="pointer-events-none"
-                    src={image}
-                    alt="Catch Phrase"
-                    layout="fill"
-                />
+                <Tilt
+                    className="h-52"
+                >
+                    <ExportedImage
+                        className="pointer-events-none"
+                        src={image}
+                        alt="Catch Phrase"
+                        objectFit="cover"
+                        layout="fill"
+                    />
+                </Tilt>
             </div>
+
             <hr
                 className="border-4 border-white"
             />
@@ -39,11 +51,15 @@ export default function ServiceCard({ image, title, description }: { image: stri
                 <Button
                     buttonType={ButtonType.Primary}
                     buttonText="Learn More"
-                    onClick={() => {
-                        router.push("/services");
-                    }}
+                    onClick={() => setShowModal(true)}
                 />
             </div>
-        </Tilt>
+            <ServiceModal
+                showModal={showModal}
+                setShowModal={setShowModal}
+                title={title}
+                description={description}
+            />
+        </div>
     )
 }

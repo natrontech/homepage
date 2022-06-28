@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router"
 import { classNames } from "../lib/design";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function Navigation(props: any) {
     const router = useRouter();
