@@ -7,7 +7,7 @@ export default function Attention() {
             className="py-20 mt-20 px-10"
         >
             <h1
-                className="sm:text-7xl text-6xl font-GilroyBold text-center"
+                className="sm:text-7xl text-5xl font-GilroyBold text-center"
             >
                 Have we got your attention?
             </h1>

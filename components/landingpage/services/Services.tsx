@@ -11,7 +11,7 @@ export default function Services() {
                 id="services"
             >
                 <h1
-                    className="text-6xl sm:hidden block font-GilroyBold text-center mb-20 sm:mb-0"
+                    className="text-5xl sm:hidden block font-GilroyBold text-center mb-20 sm:mb-0"
                 >
                     What&nbsp;
                     <span

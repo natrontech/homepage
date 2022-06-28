@@ -21,7 +21,7 @@ export default function References() {
             className="pt-20"
         >
             <h1
-                className="sm:text-xxl text-6xl font-GilroyBold text-center mb-20"
+                className="sm:text-xxl text-5xl font-GilroyBold text-center mb-20"
             >
                 <span className="text-primary">Trusted</span> by
             </h1>

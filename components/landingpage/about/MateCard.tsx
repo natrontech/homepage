@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Button, { ButtonType } from "../../general/Button";
 import Tilt from 'react-parallax-tilt';
 import { useState } from "react";
+import { EmailHeartIcon } from "../../../lib/Icons";
 
 export default function MateCard({ image, name, position, email }: { image: string, name: string, position: string, email: string }) {
     const router = useRouter();
@@ -45,6 +46,11 @@ export default function MateCard({ image, name, position, email }: { image: stri
                             >
                                 {position}
                             </p>
+                            <a
+                                href={`mailto:${email}`}
+                            >
+                                <EmailHeartIcon width={30} height={30} color="white" /> {email}
+                            </a>
                         </div>
                     </Tilt>
                 </div>

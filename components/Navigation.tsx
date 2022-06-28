@@ -22,9 +22,9 @@ export default function Navigation(props: any) {
             current: router.asPath === "/#references"
         },
         {
-            name: "Side Projects",
-            link: "/#sideprojects",
-            current: router.asPath === "/#sideprojects"
+            name: "Techonolgies",
+            link: "/#technologies",
+            current: router.asPath === "/#technologies"
         }
     ]
 
