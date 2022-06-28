@@ -7,11 +7,11 @@ export default function Services() {
     return (
         <div>
             <div
-                className="sm:mb-10 mb-1"
+                className="sm:mb-10 mb-1 pt-20"
                 id="services"
             >
                 <h1
-                    className="text-6xl sm:hidden block font-GilroyBold text-center"
+                    className="text-6xl sm:hidden block font-GilroyBold text-center mb-20 sm:mb-0"
                 >
                     What&nbsp;
                     <span
@@ -59,7 +59,7 @@ export default function Services() {
                 />
             </div>
             <div
-                className="py-20"
+                className="pt-20"
             >
                 <ServiceDescription />
             </div>

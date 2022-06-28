@@ -34,6 +34,9 @@ module.exports = {
       fontSize: {
         'xxl': ['9rem', '1'],
         'xxxl': ['16rem', '1.2'],
+      },
+      height: {
+        '128': '32rem', 
       }
     },
   },
