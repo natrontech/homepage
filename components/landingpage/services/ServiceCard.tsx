@@ -5,7 +5,7 @@ import Tilt from 'react-parallax-tilt';
 import { useState } from "react";
 import ServiceModal from "./ServiceModal";
 
-export default function ServiceCard({ image, title, description }: { image: string, title: string, description: string }) {
+export default function ServiceCard({ image, title, description, longtext }: { image: string, title: string | null, description: string | null, longtext: string | null }) {
     const router = useRouter();
     const [showModal, setShowModal] = useState(false);
 
@@ -23,7 +23,7 @@ export default function ServiceCard({ image, title, description }: { image: stri
                         className="pointer-events-none"
                         src={image}
                         alt="Catch Phrase"
-                        objectFit="cover"
+                        objectFit="contain"
                         layout="fill"
                     />
                 </Tilt>
@@ -33,7 +33,7 @@ export default function ServiceCard({ image, title, description }: { image: stri
                 className="border-4 border-white"
             />
             <div
-                className="p-5"
+                className="p-5 relative"
             >
                 <h1
                     className="text-3xl font-GilroyBold mb-4"
@@ -55,7 +55,7 @@ export default function ServiceCard({ image, title, description }: { image: stri
                 showModal={showModal}
                 setShowModal={setShowModal}
                 title={title}
-                description={description}
+                longtext={longtext}
             />
         </div>
     )

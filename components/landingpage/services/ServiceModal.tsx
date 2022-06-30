@@ -32,11 +32,11 @@ export default function ServiceModal(props: any) {
                 >
                     {props.title}
                 </h1>
-                <p
+                <div
                     className="text-sm mb-4 text-left text-black"
+                    dangerouslySetInnerHTML={{__html: props.longtext}}
                 >
-                    {props.description}
-                </p>
+                </div>
             </div>
             <div
                 className="absolute h-full w-full z-20"

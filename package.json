@@ -20,7 +20,16 @@
     "next-pwa": "^5.5.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-parallax-tilt": "^1.7.43"
+    "react-parallax-tilt": "^1.7.43",
+    "rehype-stringify": "^9.0.3",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
+    "remark-parse": "^10.0.1",
+    "remark-preset-lint-markdown-style-guide": "^5.1.2",
+    "remark-react": "^9.0.1",
+    "remark-rehype": "^10.1.0",
+    "unified": "^10.1.2",
+    "vfile-reporter": "^7.0.4"
   },
   "devDependencies": {
     "@types/node": "18.0.0",
