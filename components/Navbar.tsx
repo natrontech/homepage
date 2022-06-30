@@ -18,8 +18,8 @@ export default function Navbar(props: any) {
         <div>
             <div
                 className={classNames(
-                    isOpen ? 'z-50 opacity-100 scale-100' : 'opacity-0 scale-0 -z-50 translate-x-96',
-                    'fixed top-5 left-5 transition-all duration-300 ease-in-out',
+                    isOpen ? 'z-50 opacity-100 scale-100' : 'opacity-0 scale-75 -z-50 translate-x-96',
+                    'fixed top-5 left-5 transition-all duration-200 ease-in-out',
                 )}
             >
                 <button
