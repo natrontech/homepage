@@ -5,7 +5,7 @@ import Tilt from 'react-parallax-tilt';
 import { useState } from "react";
 import { EmailHeartIcon } from "../../../lib/Icons";
 
-export default function MateCard({ image, name, position, email }: { image: string, name: string, position: string, email: string }) {
+export default function MateCard({ image, name, position, email, nickname }: { image: string, name: string, position: string, email: string, nickname: string }) {
     const router = useRouter();
 
     const sendMail = () => {
@@ -40,18 +40,24 @@ export default function MateCard({ image, name, position, email }: { image: stri
                         <div
                             className="absolute bottom-5 left-5 translate-z-4 text-white"
                         >
+                            <p
+                                className="text-sm font-GilroyLight"
+                            >
+                                &quot;{nickname}&quot;
+                            </p>
                             <h1
                                 className="text-3xl font-GilroyBold"
                             >
                                 {name}
                             </h1>
                             <p
-                                className="text-lg font-GilroyRegular"
+                                className="text-sm font-GilroyLight mb-5"
                             >
                                 {position}
                             </p>
                             <span
                                 onClick={sendMail}
+                                className="inline"
                             >
                                 <EmailHeartIcon width={30} height={30} color="white" /> {email}
                             </span>

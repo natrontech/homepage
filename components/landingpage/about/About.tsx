@@ -8,7 +8,8 @@ export default function About() {
             image: "/images/mates/janlauber.jpeg",
             name: "Jan Lauber",
             position: "Founder",
-            email: "jan.lauber@natron.io"
+            email: "jan.lauber@natron.io",
+            nickname: "THE CLOUD EXPERT"
         }
     ]
     return (
@@ -48,6 +49,7 @@ export default function About() {
                                 name={item.name}
                                 position={item.position}
                                 email={item.email}
+                                nickname={item.nickname}
                             />
                         )
                     })
