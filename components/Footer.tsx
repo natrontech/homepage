@@ -10,7 +10,7 @@ export default function Footer(props: any) {
                 <path d="M42.3302 4L56.1394 4L56.1394 59.6239L30.0698 59.6239L30.0698 40.2652L42.3302 28.0047L42.3302 4Z" stroke="white" strokeWidth="7.94212" />
             </svg>
             <div
-                className="grid text-center sm:w-96 w-full m-auto grid-cols-1 sm:grid-cols-2"
+                className="grid text-center sm:w-96 m-auto grid-cols-1 sm:grid-cols-2"
             >
                 <div
                     className=""
@@ -32,7 +32,7 @@ export default function Footer(props: any) {
                     </p>
                 </div>
                 <div
-                    className=""
+                    className="mt-5"
                 >
                     <h1
                         className="text-white text-xl sm:text-xl font-GilroyBold mb-1"
