@@ -1,6 +1,6 @@
 import ExportedImage from "next-image-export-optimizer"
 import { classNames } from "../../../lib/design"
-import { LinkIcon } from "../../../lib/Icons"
+import { LinkIcon, ListIcon } from "../../../lib/Icons"
 
 export default function Technologies() {
     const technologies = [
@@ -18,7 +18,7 @@ export default function Technologies() {
             name: "FluxCD",
             link: "https://fluxcd.io",
             image: "/images/technologies/fluxcd.png"
-        },{
+        }, {
             name: "Grafana",
             link: "https://grafana.com",
             image: "/images/technologies/grafana.png"
@@ -89,7 +89,8 @@ export default function Technologies() {
                 "Google Cloud Platform",
                 "Mail Service",
                 "Firebase",
-            ]
+            ],
+            country: "USA, europe-west6",
         },
         {
             name: "GitHub",
@@ -100,7 +101,8 @@ export default function Technologies() {
                 "Version Control",
                 "GitOps (CI/CD)",
                 "Issue Tracking",
-            ]
+            ],
+            country: "USA",
         },
         {
             name: "Bexio",
@@ -110,7 +112,8 @@ export default function Technologies() {
                 "Invoicing",
                 "Payment",
                 "CRM",
-            ]
+            ],
+            country: "Switzerland",
         },
         {
             name: "Cloudflare",
@@ -118,14 +121,16 @@ export default function Technologies() {
             services: [
                 "DNS",
                 "ACME DNS Challenge",
-            ]
+            ],
+            country: "USA",
         },
         {
             name: "Hostpoint",
             link: "https://www.hostpoint.ch/",
             services: [
-                "Domain Names",
-            ]
+                "Domains",
+            ],
+            country: "Switzerland",
         },
         {
             name: "Notion",
@@ -134,7 +139,8 @@ export default function Technologies() {
                 "Document Management",
                 "Task Management",
                 "Project Management",
-            ]
+            ],
+            country: "USA",
         },
         {
             name: "Figma",
@@ -144,7 +150,8 @@ export default function Technologies() {
                 "Prototyping",
                 "Wireframing",
                 "UI/UX",
-            ]
+            ],
+            country: "USA",
         },
         {
             name: "Discord",
@@ -153,7 +160,8 @@ export default function Technologies() {
                 "Chat",
                 "Voice",
                 "Video",
-            ]
+            ],
+            country: "USA",
         }
     ]
 
@@ -167,13 +175,8 @@ export default function Technologies() {
             >
                 Technologies we <span className="text-primary">rely</span> on
             </h1>
-            {/* <h2
-                className="sm:text-xl text-xl border-t-2 border-b-2 w-40 m-auto font-GilroyBold text-center mb-10"
-            >
-                CNCF Infrastructure Tools
-            </h2> */}
             <div
-                className="mb-20"
+                className="mb-5"
             >
                 <div className={classNames(
                     technologies.length > 2 ? "sm:grid-cols-3" : "sm:grid-cols-2",
@@ -216,10 +219,15 @@ export default function Technologies() {
                     }
                 </div>
             </div>
-            <h1
-                className="sm:text-7xl text-5xl font-GilroyBold text-center mb-20"
+            <h2
+                className="sm:text-xl text-xl m-auto font-GilroyBold text-center mb-20"
             >
-                Providers we use for our services
+                ...and many more...
+            </h2>
+            <h1
+                className="sm:text-6xl text-5xl font-GilroyBold text-center mb-20"
+            >
+                Providers <span className="text-primary">we</span> use for our services
             </h1>
             <div
                 className="grid sm:grid-cols-3 grid-cols-1 gap-4 sm:gap-10"
@@ -234,6 +242,11 @@ export default function Technologies() {
                                 rel="noopener noreferrer"
                                 className="relative border-4 border-white p-4 min-h-52"
                             >
+                                <div
+                                    className="absolute bottom-2 right-2 font-GilroyLight text-sm"
+                                >
+                                    &#40;{item.country}&#41;
+                                </div>
                                 <div
                                     className="absolute top-5 right-5"
                                 >
@@ -251,25 +264,18 @@ export default function Technologies() {
                                         return (
                                             <li
                                                 key={index}
-                                                className=""
+                                                className="mb-2 list-none"
                                             >
+                                                <ListIcon width={25} height={25} color="white" />
+                                                &nbsp;
                                                 {service}
-
-                                                {index !== item.services.length - 1 && (
-                                                    <span>
-                                                        ,
-                                                    </span>
-                                                )}
-
                                             </li>
                                         )
                                     })}
-
                                 </div>
                             </a>
                         )
                     })
-
                 }
             </div>
         </div>
