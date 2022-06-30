@@ -20,6 +20,11 @@ export default function Navigation(props: any) {
             name: "References",
             link: "/#references",
             current: router.asPath === "/#references"
+        },
+        {
+            name: "Techonolgies",
+            link: "/#technologies",
+            current: router.asPath === "/#technologies"
         }
     ]
 
@@ -37,7 +42,7 @@ export default function Navigation(props: any) {
                                 <span
                                     className={classNames(
                                         item.current ? "inlined-text text-white" : "outlined-text text-primary",
-                                        "font-bold text-5xl sm:text-xxl cursor-pointer sm:tracking-wider tracking-widest sm:hover:text-white active:hover:text-white transition-all duration-150 sm:duration-300 ease-in-out"
+                                        "font-GilroyBold text-4b5 sm:text-xxl cursor-pointer sm:tracking-wider tracking-widest sm:hover:text-white active:hover:text-white transition-all duration-150 sm:duration-300 ease-in-out"
                                     )}
                                     onClick={() => {
                                         router.push(item.link)
@@ -69,6 +74,10 @@ export default function Navigation(props: any) {
                     >
                         info@natron.io
                     </a>
+                    <p>
+                        Weissenbühlweg 16 <br />
+                        3007 Bern
+                    </p>
                 </div>
                 <div
                     className="mx-5 sm:mx-0"

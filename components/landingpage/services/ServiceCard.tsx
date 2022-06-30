@@ -9,9 +9,6 @@ export default function ServiceCard({ image, title, description }: { image: stri
     const router = useRouter();
     const [showModal, setShowModal] = useState(false);
 
-
-    console.log(showModal)
-
     return (
         <div
             className="border-8 border-white sm:w-auto xl:w-96 w-auto m-auto"
