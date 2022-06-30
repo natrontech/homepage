@@ -32,6 +32,7 @@ module.exports = {
         'primary': '#193BF5'
       },
       fontSize: {
+        '4b5': ['2.9rem', '1'],
         'xxl': ['9rem', '1'],
         'xxxl': ['16rem', '1.2'],
       },
