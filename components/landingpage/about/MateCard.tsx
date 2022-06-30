@@ -7,7 +7,11 @@ import { EmailHeartIcon } from "../../../lib/Icons";
 
 export default function MateCard({ image, name, position, email }: { image: string, name: string, position: string, email: string }) {
     const router = useRouter();
-    const [showModal, setShowModal] = useState(false);
+
+    const sendMail = () => {
+        const url = `mailto:${email}`;
+        window.open(url, '_blank');
+    }
 
     return (
         <div
@@ -46,11 +50,11 @@ export default function MateCard({ image, name, position, email }: { image: stri
                             >
                                 {position}
                             </p>
-                            <a
-                                href={`mailto:${email}`}
+                            <span
+                                onClick={sendMail}
                             >
                                 <EmailHeartIcon width={30} height={30} color="white" /> {email}
-                            </a>
+                            </span>
                         </div>
                     </Tilt>
                 </div>
