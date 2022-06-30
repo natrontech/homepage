@@ -32,7 +32,7 @@ export default function Footer(props: any) {
                     </p>
                 </div>
                 <div
-                    className="mt-5"
+                    className="mt-5 sm:mt-0"
                 >
                     <h1
                         className="text-white text-xl sm:text-xl font-GilroyBold mb-1"
