@@ -131,10 +131,10 @@ export default function Technologies() {
                                     rel="noopener noreferrer"
                                 >
                                     <div
-                                        className="col-span-1 py-2 bg-white flex justify-center cursor-pointer hover:scale-105 transition-all duration-200 ease-in-out"
+                                        className="group relative col-span-1 py-2 border-primary border-8 flex justify-center cursor-pointer transition-all duration-200 ease-in-out"
                                     >
                                         <div
-                                            className="h-20 w-52 relative m-auto"
+                                            className="h-32 w-52 relative m-auto"
                                         >
                                             <ExportedImage
                                                 className="pointer-events-none"
@@ -143,6 +143,11 @@ export default function Technologies() {
                                                 objectFit="contain"
                                                 layout="fill"
                                             />
+                                        </div>
+                                        <div
+                                            className="font-GilroyBold text-3xl w-full sm:opacity-0 absolute bottom-0 left-0 bg-primary py-1 px-2 group-hover:opacity-100 sm:translate-y-5 sm:h-0 group-hover:translate-y-0 group-hover:h-auto transition-all duration-200 ease-in-out"
+                                        >
+                                            {item.name}
                                         </div>
                                     </div>
                                 </a>
