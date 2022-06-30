@@ -68,6 +68,16 @@ export default function Technologies() {
             link: "https://velero.io",
             image: "/images/technologies/velero.png"
         },
+        {
+            name: "Golang",
+            link: "https://golang.org",
+            image: "/images/technologies/golang.png"
+        },
+        {
+            name: "NextJS",
+            link: "https://nextjs.org",
+            image: "/images/technologies/nextjs.png"
+        },
     ]
 
     const providers = [
@@ -78,6 +88,7 @@ export default function Technologies() {
                 "Google Workspace",
                 "Google Cloud Platform",
                 "Mail Service",
+                "Firebase",
             ]
         },
         {
@@ -156,6 +167,11 @@ export default function Technologies() {
             >
                 Technologies we <span className="text-primary">rely</span> on
             </h1>
+            {/* <h2
+                className="sm:text-xl text-xl border-t-2 border-b-2 w-40 m-auto font-GilroyBold text-center mb-10"
+            >
+                CNCF Infrastructure Tools
+            </h2> */}
             <div
                 className="mb-20"
             >
@@ -198,8 +214,6 @@ export default function Technologies() {
                             )
                         })
                     }
-
-
                 </div>
             </div>
             <h1
