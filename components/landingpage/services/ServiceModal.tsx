@@ -14,7 +14,7 @@ export default function ServiceModal(props: any) {
         >
             {props.infos}
             <div
-                className="absolute p-6 bg-white border-8 border-primary w-4/5 h-4/5 sm:h-2/5 sm:w-2/5 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-50"
+                className="absolute p-6 bg-white border-8 border-primary w-4/5 h-4/5 sm:w-2/5 sm:h-3/5 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-50"
 
             >
                 <span
@@ -33,8 +33,8 @@ export default function ServiceModal(props: any) {
                     {props.title}
                 </h1>
                 <div
-                    className="text-sm mb-4 text-left text-black"
-                    dangerouslySetInnerHTML={{__html: props.longtext}}
+                    className="text-sm mb-4 text-left text-black h-full overflow-scroll"
+                    dangerouslySetInnerHTML={{ __html: props.longtext }}
                 >
                 </div>
             </div>

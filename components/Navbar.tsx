@@ -33,7 +33,7 @@ export default function Navbar(props: any) {
                 </button>
             </div>
             <div
-                className="fixed right-5 top-5 sm:right-10 z-20"
+                className="fixed right-5 top-5 z-20"
             >
                 <Hamburger
                     toggled={isOpen}
@@ -43,7 +43,7 @@ export default function Navbar(props: any) {
             </div>
             <div
                 className={classNames(
-                    isOpen ? "w-full h-full top-0 right-0" : "w-12 h-12 right-5 top-5 sm:right-10",
+                    isOpen ? "w-full h-full top-0 right-0" : "w-12 h-12 right-5 top-5",
                     "fixed  z-10 bg-primary transition-all duration-150 ease-in-out rounded-s,"
                 )}
             >
