@@ -6,18 +6,8 @@ html {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* cursor: url(../public/assets/cursor-normal.svg) 22.5 22.5, auto; */
     transition: all 0.2s ease-in-out;
 }
-
-/* .custom-cursor-hover, button, a {
-    cursor: url(../public/assets/cursor-hover.svg) 22.5 22.5, auto;
-    transition: all 0.3s ease;
-}
-
-.custom-cursor-hover:hover, button:hover, a:hover {
-    transform: scale(1.1);
-} */
 
 body {
     position: absolute;
@@ -38,4 +28,8 @@ body {
 
 .inlined-text {
     text-shadow: none;
+}
+
+strong {
+    font-family: Gilroy-Bold;
 }

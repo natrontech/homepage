@@ -11,13 +11,13 @@ export default function ServiceCard({ image, title, description, longtext }: { i
 
     return (
         <div
-            className="border-8 border-white sm:w-auto xl:w-96 w-auto m-auto"
+            className="border-8 grid grid-rows-2 h-auto border-white sm:w-auto xl:w-96 w-auto m-auto"
         >
             <div
-                className="h-52 sm:hover:scale-110 active:hover:scale-105 transition-all duration-150 ease-in-out"
+                className=" row-span-1 sm:hover:scale-110 active:hover:scale-105 transition-all duration-150 ease-in-out"
             >
                 <Tilt
-                    className="h-52"
+                    className="h-full"
                 >
                     <ExportedImage
                         className="pointer-events-none"
@@ -28,20 +28,16 @@ export default function ServiceCard({ image, title, description, longtext }: { i
                     />
                 </Tilt>
             </div>
-
-            <hr
-                className="border-4 border-white"
-            />
             <div
-                className="p-5 relative"
+                className="p-5 relative row-span-1 border-t-8 border-white"
             >
                 <h1
-                    className="text-3xl font-GilroyBold mb-4"
+                    className="sm:text-2xl text-3xl font-GilroyBold mb-4 15"
                 >
                     {title}
                 </h1>
                 <p
-                    className="text-sm mb-4"
+                    className="text-sm mb-4 h-20 overflow-scroll scrollbar-hide"
                 >
                     {description}
                 </p>

@@ -22,7 +22,7 @@ export enum ContentType {
 export const ServiceCloudReadyContent = (type: ContentType) => {
     switch (type) {
         case ContentType.Title:
-            return "Cloud ready"
+            return "Cloud setup"
         case ContentType.ContentShort:
             return "We setup your cloud infrastructure the right way. You can focus on the development of your application."
         case ContentType.ContentLong:
@@ -32,7 +32,7 @@ export const ServiceCloudReadyContent = (type: ContentType) => {
             This enables us to provide a stable and secure environment for your application.<br/><br/>
             The main Kubernetes provider is Google Kubernetes Engine (GKE).
             Google developed Kubernetes, a platform for containerized applications, and GKE is the managed service that provides a highly available, high-performance, and cost-effective container hosting environment.
-            In addition, GKE can run in the region of your choice. (Default: europe-west6 -> Zurich)
+            In addition, GKE can run in the region of your choice. (Default: <strong>europe-west6</strong> -> Zurich)
             <br /><br />
             For the application to perform on this platform, it must be "cloud ready".
             We base the design and development of cloud native applications on the 12 Factor App Manifesto. Points such as scalability, robustness, fault tolerance and self-healing are central to this.
@@ -45,7 +45,7 @@ export const ServiceCloudReadyContent = (type: ContentType) => {
 export const ServiceContainerizationContent = (type: ContentType) => {
     switch (type) {
         case ContentType.Title:
-            return "Containerization"
+            return "Container"
         case ContentType.ContentShort:
             return "We help you to containerize your legacy application and deploy it to the cloud. Join the movement!"
         case ContentType.ContentLong:
