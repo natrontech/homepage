@@ -1,11 +1,13 @@
 export default function History() {
     return (
-        <div>
+        <div
+            className="max-w-4xl mx-auto"
+        >
             <h1 className="text-center text-4xl mb-10">
                 History
             </h1>
             <p
-                className="sm:px-40 px-0"
+                className=""
             >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et felis vitae elit vestibulum in integer. Rutrum condimentum auctor non etiam risus, quisque mus vitae amet. Amet platea nulla pretium nibh nisl leo ut. Dolor cursus elit, aliquet aliquam dignissim. Senectus nec velit diam, integer augue imperdiet. Libero morbi turpis dictum ullamcorper. Suspendisse interdum venenatis fermentum facilisis integer. Sagittis risus nisl sed dolor nascetur risus, dictum iaculis. <br /><br />
                 Elit, lectus arcu risus et adipiscing nibh. Id phasellus mollis consequat et nullam quam ut sed. Maecenas cursus curabitur sed eget cursus. Id pellentesque duis libero, odio sit. Tempor blandit urna urna posuere risus, donec amet in fermentum. Posuere urna eu est eget aliquam amet.<br /><br />

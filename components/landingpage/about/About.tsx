@@ -20,12 +20,7 @@ export default function About() {
             <h1
                 className="sm:text-xxl text-5xl font-GilroyBold text-center mb-20"
             >
-                <span
-                    className="text-primary"
-                >
-                    We
-                </span>
-                &nbsp;are helping you
+                We are <span className="text-primary">helping</span> you
             </h1>
             <div
                 className={classNames(
@@ -35,7 +30,7 @@ export default function About() {
             >
                 {
                     mates.length < 2 ? (
-                        <div 
+                        <div
                             className="sm:block hidden"
                         />
                     ) : null

@@ -225,10 +225,15 @@ export default function Technologies() {
                 ...and many more...
             </h2>
             <h1
-                className="sm:text-6xl text-5xl font-GilroyBold text-center mb-20"
+                className="sm:text-6xl text-5xl font-GilroyBold text-center mb-2"
             >
                 Providers <span className="text-primary">we</span> use for our services
             </h1>
+            <p
+                className="text-lg mb-20 text-center text-gray-300"
+            >
+                #transparency
+            </p>
             <div
                 className="grid sm:grid-cols-3 grid-cols-1 gap-4 sm:gap-10"
             >

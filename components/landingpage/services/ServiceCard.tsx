@@ -2,12 +2,25 @@ import ExportedImage from "next-image-export-optimizer";
 import { useRouter } from "next/router";
 import Button, { ButtonType } from "../../general/Button";
 import Tilt from 'react-parallax-tilt';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ServiceModal from "./ServiceModal";
 
 export default function ServiceCard({ image, title, description, longtext }: { image: string, title: string | null, description: string | null, longtext: string | null }) {
     const router = useRouter();
     const [showModal, setShowModal] = useState(false);
+
+    // on key escape, close modal
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === "Escape") {
+                setShowModal(false);
+            }
+        }
+        window.addEventListener("keydown", handleKeyDown);
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        }
+    }, [showModal]);
 
     return (
         <div
