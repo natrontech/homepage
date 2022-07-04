@@ -9,7 +9,7 @@ export default function About() {
             name: "Jan Lauber",
             position: "Founder",
             email: "jan.lauber@natron.io",
-            nickname: "THE CLOUD EXPERT"
+            nickname: "THE FULLSTACK EVERYTHING"
         }
     ]
     return (

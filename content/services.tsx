@@ -7,7 +7,7 @@ export const ServiceDescriptionContent = () => {
             The start-up from <strong>Bern</strong> (Switzerland) deals with all edge topics in the area of the Cloud Native Computing Foundation. In addition, migration projects from legacy software to cloud-enabled Kubernetes applications are carried out and supported.With a lot of know-how in software development, Natron supports developers in this process. Dynamic and goal-oriented project management ultimately leads to a final solution.
             <br /><br />
             Roughly summarized, Natron offers the <strong>complete</strong> knowledge and engineering stack around the cloud and especially <strong>Kubernetes</strong>.
-            <br/><br/>
+            <br /><br />
             <MegaphoneIcon width={25} height={25} color="white" /> Feel free to contact us anytime!
         </div>
     )
@@ -50,10 +50,9 @@ export const ServiceContainerizationContent = (type: ContentType) => {
             return "We help you to containerize your legacy application and deploy it to the cloud. Join the movement!"
         case ContentType.ContentLong:
             return `
-            We use Docker for containerization.
-            Docker is a platform for developers to build, ship, and run software containers.
-            It is a containerization engine that runs on top of Linux, and is used to create containers that can run on any platform.
-            It is a lightweight, portable, and open-source software containerization engine.
+            Containers are on everyone's lips today and they are essential to bring your application to the cloud. Containerization of the application is a central task and is largely influenced by the software architecture. Security considerations in this process are also extremely important to ensure that the attack vector on your application is as small as possible. 
+            <br /><br />
+            Once the application is packaged in a container, CI/CD can be used to automate the development steps very conveniently. There are no limits to what can be done.
             `
         default:
             return null
