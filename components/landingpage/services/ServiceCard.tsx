@@ -24,7 +24,7 @@ export default function ServiceCard({ image, title, description, longtext }: { i
 
     return (
         <div
-            className="border-8 grid grid-rows-2 h-auto border-white sm:w-auto xl:w-96 w-auto m-auto"
+            className="border-8 grid grid-rows-2 h-auto border-white sm:w-full xl:w-96 w-full m-auto"
         >
             <div
                 className=" row-span-1 sm:hover:scale-110 active:hover:scale-105 transition-all duration-150 ease-in-out"
@@ -50,7 +50,7 @@ export default function ServiceCard({ image, title, description, longtext }: { i
                     {title}
                 </h1>
                 <p
-                    className="text-sm mb-4 h-20 overflow-scroll scrollbar-hide"
+                    className="text-md mb-4 h-20 overflow-scroll scrollbar-hide"
                 >
                     {description}
                 </p>

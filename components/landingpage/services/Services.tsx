@@ -35,7 +35,7 @@ export default function Services() {
                 </div>
             </div>
             <div
-                className="grid sm:grid-cols-3 grid-cols-1 gap-8"
+                className="grid lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-8"
             >
                 <ServiceCard
                     image="/images/illustrations/cloud-migration.png"

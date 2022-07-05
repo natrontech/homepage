@@ -9,7 +9,8 @@ export default function About() {
             name: "Jan Lauber",
             position: "Founder",
             email: "jan.lauber@natron.io",
-            nickname: "THE FULLSTACK EVERYTHING"
+            nickname: "THE FULLSTACK EVERYTHING",
+            github: "janlauber",
         },
     ]
     return (
@@ -18,13 +19,13 @@ export default function About() {
             className="pt-20"
         >
             <h1
-                className="sm:text-xxl text-5xl font-GilroyBold text-center mb-20"
+                className="lg:text-xxl sm:text-8xl text-5xl font-GilroyBold text-center mb-20"
             >
                 We are <span className="text-primary">helping</span> you
             </h1>
             <div
                 className={classNames(
-                    mates.length == 2 ? "sm:grid-cols-2" : "sm:grid-cols-3",
+                    mates.length == 2 ? "sm:grid-cols-2" : "lg:grid-cols-3",
                     "grid grid-cols-1 gap-8"
                 )}
             >
@@ -45,6 +46,7 @@ export default function About() {
                                 position={item.position}
                                 email={item.email}
                                 nickname={item.nickname}
+                                github={item.github}
                             />
                         )
                     })

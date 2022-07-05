@@ -171,7 +171,7 @@ export default function Technologies() {
             className="py-20"
         >
             <h1
-                className="sm:text-xxl text-5xl font-GilroyBold text-center mb-20"
+                className="lg:text-xxl sm:text-8xl text-5xl font-GilroyBold text-center mb-20"
             >
                 Technologies we <span className="text-primary">rely</span> on
             </h1>
@@ -179,7 +179,7 @@ export default function Technologies() {
                 className="mb-5"
             >
                 <div className={classNames(
-                    technologies.length > 2 ? "sm:grid-cols-3" : "sm:grid-cols-2",
+                    technologies.length % 2 == 1 ? "lg:grid-cols-3 sm:grid-cols-1" : "lg:grid-cols-2 sm:grid-cols-2",
                     "grid grid-cols-1 gap-4 sm:gap-10"
                 )}
                 >
@@ -235,7 +235,7 @@ export default function Technologies() {
                 #transparency
             </p>
             <div
-                className="grid sm:grid-cols-3 grid-cols-1 gap-4 sm:gap-10"
+                className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 sm:gap-10"
             >
                 {
                     providers.map((item: any, index: number) => {

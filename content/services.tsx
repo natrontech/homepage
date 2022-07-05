@@ -5,11 +5,21 @@ export const ServiceDescriptionContent = () => {
         <div
             className="text-lg"
         >
-            Natron helps build and optimize Kubernetes cloud infrastructure.
+            <strong>Natron</strong> helps build and optimize Kubernetes cloud infrastructure.
             The start-up from <strong>Bern</strong> (Switzerland) deals with all edge topics in the area of the Cloud Native Computing Foundation (CNCF). In addition, migration projects from legacy software to cloud-enabled Kubernetes applications are carried out and supported. With a lot of know-how in software development, Natron supports developers in this process. Dynamic and goal-oriented project management ultimately leads to a final solution.
             <br /><br />
-            Roughly summarized, Natron offers the <strong>complete</strong> knowledge and engineering stack around the cloud and especially <strong>Kubernetes</strong>.
-            <br /><br />
+            <hr 
+                className="border-2"
+            />
+            <div
+                className="text-center mt-5 mb-5 font-Medium text-2xl border-white"
+            >
+                Roughly summarized, <strong>Natron</strong> offers the <strong>complete</strong> knowledge and engineering stack around the cloud and especially <strong>Kubernetes</strong>.
+            </div>
+            <hr 
+                className="border-2"
+            />
+            <br />
             <MegaphoneIcon width={25} height={25} color="white" /> Feel free to contact us anytime!
         </div>
     )
@@ -73,10 +83,10 @@ export const SoftwareEngineeringContent = (type: ContentType) => {
             Everything has to be planned and developed <strong>cloud ready / cloud native</strong> so that the full potential of the platform can be exploited.<br/><br/>
             Here, it is recommended to choose the <strong>Twelve-Factor App</strong> path (<a href="https://12factor.net" target="_blank">https://12factor.net</a>). 
             This method helps immensely in the development of an application for the cloud. 
-            Natron also advises and helps developers to migrate their application slowly from legacy to the cloud on the basis of this method. <br/><br/>
+            <strong>Natron</strong> also advises and helps developers to migrate their application slowly from legacy to the cloud on the basis of this method. <br/><br/>
             It is always a question of investment how this migration is done. 
             Sometimes it makes sense to migrate apps that are not yet cloud-ready to Kubernetes and later to outsource individual parts of the application to individual micro-services. Here, the right sensitivity and the correct goal setting are crucial for success. 
-            Natron is there to help you with all these issues and support you along the way, because the cloud is no longer the future but reality.
+            <strong>Natron</strong> is there to help you with all these issues and support you along the way, because the cloud is no longer the future but reality.
             `
         default:
             return null
