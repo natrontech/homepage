@@ -76,7 +76,7 @@ export const SoftwareEngineeringContent = (type: ContentType) => {
         case ContentType.Title:
             return "Software Engineering"
         case ContentType.ContentShort:
-            return "We helpt you to build and design your application with the right tools and architecture."
+            return "We help you to build and design your application with the right tools and architecture."
         case ContentType.ContentLong:
             return `
             In the cloud and especially on Kubernetes, it is difficult to make the right software architecture decisions as a developer. 

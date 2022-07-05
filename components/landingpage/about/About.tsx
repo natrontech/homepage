@@ -21,7 +21,7 @@ export default function About() {
             <h1
                 className="lg:text-xxl sm:text-8xl text-5xl font-GilroyBold text-center mb-20"
             >
-                We are <span className="text-primary">helping</span> you
+                We <span className="text-primary">rise</span> by lifting <span className="text-primary">others</span>
             </h1>
             <div
                 className={classNames(
