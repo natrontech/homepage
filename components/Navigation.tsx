@@ -33,7 +33,7 @@ export default function Navigation(props: any) {
             className="relative h-screen"
         >
             <div
-                className="text-center space-y-10 sm:text-left absolute top-1/2 left-1/2 sm:left-20 sm:-translate-x-0 w-full -translate-x-1/2 -translate-y-1/2"
+                className="text-center space-y-10 lg:text-left absolute top-1/2 left-1/2 lg:left-20 lg:-translate-x-0 w-full -translate-x-1/2 -translate-y-1/2"
             >
                 {
                     navigation.map((item: any, index: number) => {
@@ -42,7 +42,7 @@ export default function Navigation(props: any) {
                                 <span
                                     className={classNames(
                                         item.current ? "inlined-text text-white" : "outlined-text text-primary",
-                                        "font-GilroyBold text-4b5 sm:text-xxl cursor-pointer sm:tracking-wider tracking-widest sm:hover:text-white active:hover:text-white transition-all duration-150 sm:duration-300 ease-in-out"
+                                        "font-GilroyBold text-4b5 lg:text-xxl md:text-5xl cursor-pointer lg:tracking-wider tracking-widest lg:hover:text-white active:hover:text-white transition-all duration-150 sm:duration-300 ease-in-out"
                                     )}
                                     onClick={() => {
                                         router.push(item.link)
@@ -58,10 +58,10 @@ export default function Navigation(props: any) {
 
             </div>
             <div
-                className="absolute grid w-full sm:w-auto grid-cols-2 sm:grid-cols-1 sm:bottom-20 sm:right-20 bottom-5"
+                className="absolute grid w-full lg:w-auto grid-cols-2 lg:grid-cols-1 lg:bottom-20 lg:right-20 bottom-5"
             >
                 <div
-                    className="sm:mb-10 mx-5 sm:mx-0"
+                    className="lg:mb-10 mx-5 lg:mx-0"
                 >
                     <h1
                         className="text-white text-xl sm:text-xl font-GilroyBold mb-1"
@@ -80,7 +80,7 @@ export default function Navigation(props: any) {
                     </p>
                 </div>
                 <div
-                    className="mx-5 sm:mx-0"
+                    className="mx-5 lg:mx-0"
                 >
                     <h1
                         className="text-white text-xl sm:text-xl font-GilroyBold mb-1"
