@@ -14,7 +14,7 @@ export default function ServiceModal(props: any) {
         >
             {props.infos}
             <div
-                className="absolute p-6 bg-white border-8 border-primary w-4/5 h-4/5 sm:h-2/5 sm:w-2/5 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-50"
+                className="absolute p-6 grid grid-rows-6 grid-row bg-white border-8 border-primary w-4/5 h-4/5 sm:w-2/5 sm:h-3/5 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-50"
 
             >
                 <span
@@ -27,16 +27,21 @@ export default function ServiceModal(props: any) {
                         color="#193BF5"
                     />
                 </span>
-                <h1
-                    className="text-3xl font-GilroyBold mb-4 text-primary"
+                <div
+                    className="row-span-1 h-auto sm:m-auto"
                 >
-                    {props.title}
-                </h1>
-                <p
-                    className="text-sm mb-4 text-left text-black"
+                    <h1
+                        className="text-3xl font-GilroyBold mb-4 text-primary h-10"
+                    >
+                        {props.title}
+                    </h1>
+                </div>
+                {/* TODO: fix scroll height */}
+                <div
+                    className="text-sm sm:text-lg text-left row-span-5 text-black h-full overflow-scroll scrollbar-hide"
+                    dangerouslySetInnerHTML={{ __html: props.longtext }}
                 >
-                    {props.description}
-                </p>
+                </div>
             </div>
             <div
                 className="absolute h-full w-full z-20"

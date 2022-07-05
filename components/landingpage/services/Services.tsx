@@ -1,4 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
+import { ContentType, ServiceCloudReadyContent, ServiceContainerizationContent, SoftwareEngineeringContent } from "../../../content/services";
 import ServiceCard from "./ServiceCard";
 import ServiceDescription from "./ServiceDescription";
 import ServiceModal from "./ServiceModal";
@@ -34,22 +35,25 @@ export default function Services() {
                 </div>
             </div>
             <div
-                className="grid sm:grid-cols-3 grid-cols-1 gap-8"
+                className="grid lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-8"
             >
                 <ServiceCard
                     image="/images/illustrations/cloud-migration.png"
-                    title="Cloud ready"
-                    description="We setup your cloud infrastructure the right way so you can work without any problems."
+                    title={ServiceCloudReadyContent(ContentType.Title)}
+                    description={ServiceCloudReadyContent(ContentType.ContentShort)}
+                    longtext={ServiceCloudReadyContent(ContentType.ContentLong)}
                 />
                 <ServiceCard
-                    image="/images/illustrations/cloud-migration.png"
-                    title="Cloud ready"
-                    description="We setup your cloud infrastructure the right way so you can work without any problems."
+                    image="/images/illustrations/containerzation.png"
+                    title={ServiceContainerizationContent(ContentType.Title)}
+                    description={ServiceContainerizationContent(ContentType.ContentShort)}
+                    longtext={ServiceContainerizationContent(ContentType.ContentLong)}
                 />
                 <ServiceCard
-                    image="/images/illustrations/cloud-migration.png"
-                    title="Cloud ready"
-                    description="We setup your cloud infrastructure the right way so you can work without any problems."
+                    image="/images/illustrations/software-engineering.png"
+                    title={SoftwareEngineeringContent(ContentType.Title)}
+                    description={SoftwareEngineeringContent(ContentType.ContentShort)}
+                    longtext={SoftwareEngineeringContent(ContentType.ContentLong)}
                 />
             </div>
             <div

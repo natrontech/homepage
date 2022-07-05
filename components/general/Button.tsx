@@ -10,7 +10,7 @@ export enum ButtonType {
 export default function Button({ buttonType, buttonText, onClick }: { buttonType: ButtonType, buttonText: string, onClick?: () => void }) {
 
     const hoverAnimationClasses = "sm:hover:-translate-x-2 sm:hover:translate-y-2 active:hover:-translate-x-2 active:hover:translate-y-2 transition-all duration-150 ease-in-out";
-    const defaultStyleClasses = "font-GilroyBold text-lg py-4 px-12 w-full"
+    const defaultStyleClasses = "font-GilroyBold text-lg py-4 px-12 w-full focus:outline-none"
 
     switch (buttonType) {
         case ButtonType.Primary:

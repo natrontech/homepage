@@ -9,8 +9,9 @@ export default function About() {
             name: "Jan Lauber",
             position: "Founder",
             email: "jan.lauber@natron.io",
-            nickname: "THE CLOUD EXPERT"
-        }
+            nickname: "THE FULLSTACK EVERYTHING",
+            github: "janlauber",
+        },
     ]
     return (
         <div
@@ -18,24 +19,19 @@ export default function About() {
             className="pt-20"
         >
             <h1
-                className="sm:text-xxl text-5xl font-GilroyBold text-center mb-20"
+                className="lg:text-xxl sm:text-8xl text-5xl font-GilroyBold text-center mb-20"
             >
-                <span
-                    className="text-primary"
-                >
-                    We
-                </span>
-                &nbsp;are helping you
+                We <span className="text-primary">rise</span> by lifting <span className="text-primary">others</span>
             </h1>
             <div
                 className={classNames(
-                    mates.length == 2 ? "sm:grid-cols-2" : "sm:grid-cols-3",
+                    mates.length == 2 ? "sm:grid-cols-2" : "lg:grid-cols-3",
                     "grid grid-cols-1 gap-8"
                 )}
             >
                 {
                     mates.length < 2 ? (
-                        <div 
+                        <div
                             className="sm:block hidden"
                         />
                     ) : null
@@ -50,6 +46,7 @@ export default function About() {
                                 position={item.position}
                                 email={item.email}
                                 nickname={item.nickname}
+                                github={item.github}
                             />
                         )
                     })

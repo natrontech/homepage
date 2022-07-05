@@ -13,7 +13,7 @@ import Technologies from '../components/landingpage/technologies/Technologies'
 const Home: NextPage = () => {
   return (
     <div
-      className=""
+      className="scrollbar-hide"
     >
       <div
         className="sm:px-20 px-4"
