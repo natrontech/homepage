@@ -2,9 +2,11 @@ import { MegaphoneIcon } from "../lib/Icons"
 
 export const ServiceDescriptionContent = () => {
     return (
-        <div>
+        <div
+            className="text-lg"
+        >
             Natron helps build and optimize Kubernetes cloud infrastructure.
-            The start-up from <strong>Bern</strong> (Switzerland) deals with all edge topics in the area of the Cloud Native Computing Foundation. In addition, migration projects from legacy software to cloud-enabled Kubernetes applications are carried out and supported.With a lot of know-how in software development, Natron supports developers in this process. Dynamic and goal-oriented project management ultimately leads to a final solution.
+            The start-up from <strong>Bern</strong> (Switzerland) deals with all edge topics in the area of the Cloud Native Computing Foundation (CNCF). In addition, migration projects from legacy software to cloud-enabled Kubernetes applications are carried out and supported. With a lot of know-how in software development, Natron supports developers in this process. Dynamic and goal-oriented project management ultimately leads to a final solution.
             <br /><br />
             Roughly summarized, Natron offers the <strong>complete</strong> knowledge and engineering stack around the cloud and especially <strong>Kubernetes</strong>.
             <br /><br />
@@ -28,7 +30,7 @@ export const ServiceCloudReadyContent = (type: ContentType) => {
         case ContentType.ContentLong:
             return `
             We design, build and automate stable IT infrastructures based on Kubernetes and support the maintenance and lifecycle management of existing environments.
-            Our services are based on the principles of the Cloud Native Computing Foundation. 
+            Our services are based on the principles of the Cloud Native Computing Foundation (CNCF). 
             This enables us to provide a stable and secure environment for your application.<br/><br/>
             The main Kubernetes provider is Google Kubernetes Engine (GKE).
             Google developed Kubernetes, a platform for containerized applications, and GKE is the managed service that provides a highly available, high-performance, and cost-effective container hosting environment.

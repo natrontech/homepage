@@ -10,7 +10,7 @@ export default function About() {
             position: "Founder",
             email: "jan.lauber@natron.io",
             nickname: "THE FULLSTACK EVERYTHING"
-        }
+        },
     ]
     return (
         <div

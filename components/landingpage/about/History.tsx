@@ -7,7 +7,7 @@ export default function History() {
                 History
             </h1>
             <p
-                className=""
+                className="text-lg"
             >
                 Natron is the product of many years of <strong>friendships</strong> and dream of self-employment. From many innovative thoughts and the endless fascination with Kubernetes, a start-up was born, which brings fresh, young and dynamic entrepreneurial spirit into the world of computer science.
                 <br /><br />
