@@ -19,10 +19,15 @@ export default function About() {
             className="pt-20"
         >
             <h1
-                className="lg:text-xxl sm:text-8xl text-5xl font-GilroyBold text-center mb-20"
+                className="lg:text-xxl sm:text-8xl text-5xl font-GilroyBold text-center mb-2"
             >
                 We <span className="text-primary">rise</span> by lifting <span className="text-primary">others</span>
             </h1>
+            <p
+                className="text-lg mb-20 text-center text-gray-300"
+            >
+                #risewithus
+            </p>
             <div
                 className={classNames(
                     mates.length == 2 ? "sm:grid-cols-2" : "lg:grid-cols-3",

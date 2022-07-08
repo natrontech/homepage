@@ -43,7 +43,7 @@ export default function References() {
                                     rel="noopener noreferrer"
                                 >
                                     <Tilt
-                                        className="col-span-1 flex justify-center py-8 px-8 border-8 border-primary cursor-pointer"
+                                        className="col-span-1 flex justify-center py-8 px-8 border-8 border-primary bg-white cursor-pointer"
                                     >
                                         <div
                                             className="h-10 w-40 relative m-auto"

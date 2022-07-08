@@ -227,7 +227,7 @@ export default function Technologies() {
             <h1
                 className="sm:text-6xl text-5xl font-GilroyBold text-center mb-2"
             >
-                Providers <span className="text-primary">we</span> use for our services
+                We are <span className="text-primary">build</span> on
             </h1>
             <p
                 className="text-lg mb-20 text-center text-gray-300"
