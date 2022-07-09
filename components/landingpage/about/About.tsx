@@ -5,7 +5,7 @@ import MateCard from "./MateCard";
 export default function About() {
     const mates = [
         {
-            image: "/images/mates/janlauber.jpeg",
+            image: "/images/mates/janlauber.gif",
             name: "Jan Lauber",
             position: "Founder",
             email: "jan.lauber@natron.io",
