@@ -17,7 +17,7 @@ export const ServiceDescriptionContent = () => {
             <div
                 className="text-center mt-5 mb-5 font-Medium text-2xl border-white"
             >
-                Roughly summarized, <strong>Natron</strong> offers the <strong>complete</strong> ongoing knowledge and engineering stack around the cloud and especially <strong>Kubernetes</strong>.
+                Roughly summarized, <strong>Natron</strong> offers the <strong>complete</strong> knowledge and engineering stack around the cloud and especially <strong>Kubernetes</strong>.
             </div>
             <hr
                 className="border-2"
