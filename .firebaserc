@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "natron-d31f5"
-  }
+    "default": "natron-a524e"
+  },
+  "targets": {}
 }

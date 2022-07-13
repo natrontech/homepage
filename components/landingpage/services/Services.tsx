@@ -44,7 +44,7 @@ export default function Services() {
                     longtext={ServiceCloudReadyContent(ContentType.ContentLong)}
                 />
                 <ServiceCard
-                    image="/images/illustrations/containerzation.png"
+                    image="/images/illustrations/container.png"
                     title={ServiceContainerizationContent(ContentType.Title)}
                     description={ServiceContainerizationContent(ContentType.ContentShort)}
                     longtext={ServiceContainerizationContent(ContentType.ContentLong)}

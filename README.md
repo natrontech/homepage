@@ -1,5 +1,7 @@
 # Natron
 
-This is the website of the Natron GmbH.
+This is the website of Natron GmbH, a small Start-Up from Bern (Switzerland).
 
-URL: [natron.io](https://natron.io)
+URLs: 
+- [natron.io](https://natron.io)
+- [natron.ch](https://natron.ch)

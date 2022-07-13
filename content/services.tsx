@@ -6,9 +6,12 @@ export const ServiceDescriptionContent = () => {
             className="text-lg"
         >
             <strong>Natron</strong> helps build and optimize Kubernetes cloud infrastructure.
-            The start-up from <strong>Bern</strong> (Switzerland) deals with all edge topics in the area of the Cloud Native Computing Foundation (CNCF). In addition, migration projects from legacy software to cloud-enabled Kubernetes applications are carried out and supported. With a lot of know-how in software development, Natron supports developers in this process. Dynamic and goal-oriented project management ultimately leads to a final solution.
+            The start-up from <strong>Bern</strong> (Switzerland) deals with all edge topics in the area of the Cloud Native Computing Foundation (CNCF).
+            In addition, migration projects from legacy software to cloud-enabled Kubernetes applications are carried out and supported.
+            With know-how in software development, Natron supports developers in this process.
+            Dynamic and goal-oriented project management ultimately leads to a final solution.
             <br /><br />
-            <hr 
+            <hr
                 className="border-2"
             />
             <div
@@ -16,11 +19,11 @@ export const ServiceDescriptionContent = () => {
             >
                 Roughly summarized, <strong>Natron</strong> offers the <strong>complete</strong> knowledge and engineering stack around the cloud and especially <strong>Kubernetes</strong>.
             </div>
-            <hr 
+            <hr
                 className="border-2"
             />
             <br />
-            <MegaphoneIcon width={25} height={25} color="white" /> Feel free to contact us anytime!
+            <a href="mailto:info@natron.io"><MegaphoneIcon width={25} height={25} color="white" /> Feel free to contact us anytime!</a>
         </div>
     )
 }

@@ -30,7 +30,7 @@ export default function MateCard({ image, name, position, email, nickname, githu
                         <ExportedImage
                             className="pointer-events-none"
                             src={image}
-                            alt="Catch Phrase"
+                            alt="Mate"
                             objectFit="cover"
                             layout="fill"
                         />
