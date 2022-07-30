@@ -31,16 +31,6 @@ export const auth = getAuth();
 
 if (isProduction) {
     isSupported().then(yes => yes ? getAnalytics() : console.log('Analytics not supported'));
-
-    isSupported().then(yes => yes ? getPerformance() : console.log('Performance is not supported'));
-
-    isSupported().then(yes => yes ? initializeAppCheck(app, {
-        provider: new ReCaptchaV3Provider('6LegxwggAAAAAIyZyiIbsm0LuMe-g5G2CayAvSz1'),
-
-        // Optional argument. If true, the SDK automatically refreshes App Check
-        // tokens as needed.
-        isTokenAutoRefreshEnabled: true
-    }) : console.log('App Check is not supported'));
 }
 
 export default firebaseConfig;
