@@ -16,8 +16,8 @@ const Imprint = () => {
                 <br />Jan Lauber, Geschäftsführer <br />
                 <br />
                 <strong>Name des Unternehmens</strong>: Natron GmbH <br />
-                <strong>Registrationsnummer</strong>: CHE- <br />
-                <strong>Umsatzsteuer-Identifikationsnummer</strong>: CHE- MWST <br />
+                {/* <strong>Registrationsnummer</strong>: CHE- <br />
+                <strong>Umsatzsteuer-Identifikationsnummer</strong>: CHE- MWST <br /> */}
                 <br />
                 <strong>Haftungsausschluss</strong>
                 <br />Der Autor übernimmt keine Gewähr für die Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen. <br />Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, die aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Störungen entstanden sind, werden ausgeschlossen. <br />
