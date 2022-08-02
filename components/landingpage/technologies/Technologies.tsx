@@ -133,14 +133,14 @@ export default function Technologies() {
             country: "Switzerland",
         },
         {
-            name: "Notion",
-            link: "https://www.notion.so/",
+            name: "Atlassian Jira / Confluence",
+            link: "https://www.atlassian.com",
             services: [
                 "Document Management",
                 "Task Management",
                 "Project Management",
             ],
-            country: "USA",
+            country: "Australia",
         },
         {
             name: "Figma",
