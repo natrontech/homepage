@@ -12,21 +12,21 @@ export default function About() {
             nickname: "THE FULLSTACK EVERYTHING",
             github: "janlauber",
         },
-        {
-            image: "/images/mates/generic.jpeg",
-            name: "Jan Fuhrer",
-            position: "Cloud Engineer",
-            email: "jan.fuhrer@natron.io",
-            nickname: "THE KUBERNETES LORD",
-            github: "janfuhrer",
-        },
-        {
-            image: "/images/mates/generic.jpeg",
-            name: "Alex Fuhrer",
-            position: "Accountant",
-            email: "alex.fuhrer@natron.io",
-            nickname: "THE BUDGET PRO",
-        }
+        // {
+        //     image: "/images/mates/generic.jpeg",
+        //     name: "Jan Fuhrer",
+        //     position: "Cloud Engineer",
+        //     email: "jan.fuhrer@natron.io",
+        //     nickname: "THE KUBERNETES LORD",
+        //     github: "janfuhrer",
+        // },
+        // {
+        //     image: "/images/mates/generic.jpeg",
+        //     name: "Alex Fuhrer",
+        //     position: "Accountant",
+        //     email: "alex.fuhrer@natron.io",
+        //     nickname: "THE BUDGET PRO",
+        // }
     ]
     return (
         <div
