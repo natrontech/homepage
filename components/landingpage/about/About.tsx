@@ -17,7 +17,7 @@ export default function About() {
             name: "Jan Fuhrer",
             position: "Cloud Engineer",
             email: "jan.fuhrer@natron.io",
-            nickname: "THE DEEP DIVER",
+            nickname: "THE CLOUD DIVER",
             github: "janfuhrer",
         },
         {
