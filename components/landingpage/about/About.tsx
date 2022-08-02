@@ -7,26 +7,26 @@ export default function About() {
         {
             image: "/images/mates/janlauber.jpeg",
             name: "Jan Lauber",
-            position: "Founder",
+            position: "Founder | Cloud Engineer",
             email: "jan.lauber@natron.io",
             nickname: "THE FULLSTACK EVERYTHING",
             github: "janlauber",
         },
-        // {
-        //     image: "/images/mates/generic.jpeg",
-        //     name: "Jan Fuhrer",
-        //     position: "Cloud Engineer",
-        //     email: "jan.fuhrer@natron.io",
-        //     nickname: "THE KUBERNETES LORD",
-        //     github: "janfuhrer",
-        // },
-        // {
-        //     image: "/images/mates/generic.jpeg",
-        //     name: "Alex Fuhrer",
-        //     position: "Accountant",
-        //     email: "alex.fuhrer@natron.io",
-        //     nickname: "THE BUDGET PRO",
-        // }
+        {
+            image: "/images/mates/janfuhrer.jpeg",
+            name: "Jan Fuhrer",
+            position: "Cloud Engineer",
+            email: "jan.fuhrer@natron.io",
+            nickname: "THE CLOUD DIVER",
+            github: "janfuhrer",
+        },
+        {
+            image: "/images/mates/alexfuhrer.jpeg",
+            name: "Alex Fuhrer",
+            position: "Accountant",
+            email: "alex.fuhrer@natron.io",
+            nickname: "THE NUMBERS JUGGLER",
+        }
     ]
     return (
         <div
