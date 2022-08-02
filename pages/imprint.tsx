@@ -4,20 +4,22 @@ const Imprint = () => {
             className="sm:px-6 lg:px-8 px-4"
         >
             <h1
-                className="text-4xl font-bold text-center my-6"
+                className="text-4xl font-bold text-center py-6"
                 id="imprint"
             >
                 Impressum
             </h1>
-            <p>Natron GmbH <br />Weissenbühlweg 16 <br />Bern 3007 <br />Schweiz <br />
+            <p
+                className="py-10"
+            >Natron GmbH <br />Weissenbühlweg 16 <br />Bern 3007 <br />Schweiz <br />
                 <strong>E-Mail</strong>: info@natron.io <br />
                 <br />
                 <strong>Vertretungsberechtigte Personen</strong>
                 <br />Jan Lauber, Geschäftsführer <br />
                 <br />
                 <strong>Name des Unternehmens</strong>: Natron GmbH <br />
-                {/* <strong>Registrationsnummer</strong>: CHE- <br />
-                <strong>Umsatzsteuer-Identifikationsnummer</strong>: CHE- MWST <br /> */}
+                <strong>Registrationsnummer</strong>: (in Gründung) <br />
+                <strong>Umsatzsteuer-Identifikationsnummer</strong>: (in Gründung) <br />
                 <br />
                 <strong>Haftungsausschluss</strong>
                 <br />Der Autor übernimmt keine Gewähr für die Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen. <br />Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, die aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Störungen entstanden sind, werden ausgeschlossen. <br />
