@@ -46,13 +46,6 @@ export default function Footer(props: any) {
                     >
                         Imprint
                     </Link>
-                    <br />
-                    <Link
-                        href="/privacy-policy"
-                        className="cursor-pointer"
-                    >
-                        Privacy policy
-                    </Link>
                 </div>
             </div>
             <div

@@ -87,19 +87,15 @@ export default function Navigation(props: any) {
                     >
                         Legal sites
                     </h1>
-                    <Link
-                        href="/imprint"
+                    <span
                         className="cursor-pointer"
+                        onClick={() => {
+                            router.push("/imprint")
+                            props.setOpen(false)
+                        }}
                     >
                         Imprint
-                    </Link>
-                    <br />
-                    <Link
-                        href="/privacy-policy"
-                        className="cursor-pointer"
-                    >
-                        Privacy policy
-                    </Link>
+                    </span>
                 </div>
             </div>
         </div>

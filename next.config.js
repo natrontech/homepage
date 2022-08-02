@@ -6,7 +6,7 @@ const nextConfig = {
 
 const withPWA = require('next-pwa');
 
-module.exports = withPWA({
+module.exports = {
   trailingSlash: true,
   nextConfig,
   serverRuntimeConfig: {
@@ -38,4 +38,4 @@ module.exports = withPWA({
     skipWaiting: true,
     disable: process.env.NODE_ENV === "development",
   }
-})
+}
