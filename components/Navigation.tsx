@@ -16,11 +16,11 @@ export default function Navigation(props: any) {
             link: "/#about",
             current: router.asPath === "/#about"
         },
-        {
-            name: "References",
-            link: "/#references",
-            current: router.asPath === "/#references"
-        },
+        // {
+        //     name: "References",
+        //     link: "/#references",
+        //     current: router.asPath === "/#references"
+        // },
         {
             name: "Techonolgies",
             link: "/#technologies",
