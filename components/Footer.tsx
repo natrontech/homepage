@@ -41,7 +41,7 @@ export default function Footer(props: any) {
                         Legal sites
                     </h1>
                     <Link
-                        href="/imprint"
+                        href="/imprint#imprint"
                         className="cursor-pointer"
                     >
                         Imprint

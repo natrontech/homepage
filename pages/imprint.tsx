@@ -1,10 +1,11 @@
 const Imprint = () => {
     return (
         <div
-            className="sm:px-6 lg:px-8 px-4 py-6"
+            className="sm:px-6 lg:px-8 px-4"
         >
             <h1
-                className="text-4xl font-bold text-center"
+                className="text-4xl font-bold text-center my-6"
+                id="imprint"
             >
                 Impressum
             </h1>
@@ -27,8 +28,6 @@ const Imprint = () => {
                 <br />
                 <strong>Urheberrechtserklärung</strong>
                 <br />Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschliesslich Natron GmbH oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen. <br />
-                <br />
-                <strong>Quelle</strong>: <a href='https://brainbox.swiss/'>BrainBox Solutions</a>
             </p>
         </div>
     )

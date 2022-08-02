@@ -90,7 +90,7 @@ export default function Navigation(props: any) {
                     <span
                         className="cursor-pointer"
                         onClick={() => {
-                            router.push("/imprint")
+                            router.push("/imprint#imprint")
                             props.setOpen(false)
                         }}
                     >
