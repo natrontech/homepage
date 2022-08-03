@@ -30,11 +30,11 @@ const Home: NextPage = () => {
       >
         <About />
       </div>
-      {/* <div
+      <div
         className='sm:px-20 px-4'
       >
         <References />
-      </div> */}
+      </div>
       <div
         className='bg-primary'
       >
