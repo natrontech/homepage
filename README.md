@@ -1,6 +1,6 @@
 # Natron
 
-This is the website of Natron GmbH, a small Start-Up from Bern (Switzerland).
+This is the website of Natron Tech GmbH, a small Start-Up from Bern (Switzerland).
 
 URLs: 
 - [natron.io](https://natron.io)
