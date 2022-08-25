@@ -9,11 +9,11 @@ export default function References() {
             link: "https://netrics.ch",
             image: "/images/firms/netrics.png"
         },
-        // {
-        //     name: "BRF-Solutions",
-        //     link: "https://brf-solutions.ch",
-        //     image: "/images/firms/brf-solutions.png"
-        // },
+        {
+            name: "BRF-Solutions",
+            link: "https://brf-solutions.ch",
+            image: "/images/firms/brf-solutions.jpeg"
+        },
     ]
     return (
         <div
