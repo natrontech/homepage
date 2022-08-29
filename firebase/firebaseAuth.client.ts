@@ -1,10 +1,7 @@
 import getConfig from "next/config";
 import { getApps, initializeApp } from 'firebase/app';
 import { getAuth } from "firebase/auth";
-import { getDatabase } from "firebase/database";
 import { getAnalytics, isSupported } from "firebase/analytics";
-import { getPerformance } from "firebase/performance";
-import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 
 
 const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
@@ -20,17 +17,8 @@ const firebaseConfig = {
     measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
-// check if environment is production
-const isProduction = process.env.NODE_ENV === 'production';
-
 const app = !(getApps().length) ? initializeApp(firebaseConfig) : getApps()[0];
 
-export const database = getDatabase();
+const analytics = isSupported().then(yes => yes ? getAnalytics() : console.log('Analytics not supported'));
 
-export const auth = getAuth();
-
-if (isProduction) {
-    isSupported().then(yes => yes ? getAnalytics() : console.log('Analytics not supported'));
-}
-
-export default firebaseConfig;
+export { app, analytics };
