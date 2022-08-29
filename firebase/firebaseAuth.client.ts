@@ -17,17 +17,8 @@ const firebaseConfig = {
     measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
-// check if environment is production
-const isProduction = process.env.NODE_ENV === 'production';
-
 const app = !(getApps().length) ? initializeApp(firebaseConfig) : getApps()[0];
 
 const analytics = isSupported().then(yes => yes ? getAnalytics() : console.log('Analytics not supported'));
-
-export const auth = getAuth();
-
-// if (isProduction) {
-//     isSupported().then(yes => yes ? getAnalytics() : console.log('Analytics not supported'));
-// }
 
 export { app, analytics };
