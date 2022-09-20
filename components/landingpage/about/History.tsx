@@ -11,7 +11,7 @@ export default function History() {
             >
                 <strong>Natron</strong> is the product of many years of <strong>friendships</strong> and dream of self-employment. From countless innovative thoughts and the endless fascination with Kubernetes, a start-up was born, which brings fresh, young and dynamic spirit into the world of computer science.
                 <br /><br />
-                Started alone, Jan Lauber wants to create a workspace for himself and in the future his friends that is culturally unique and incomparable. The goal is to offer the customers a very close and well maintained relationship around the provided services through this personal connection. The culture, the employee, the customer and not the fast growth should be in the center of the company and thus represent a proud employer.
+                Started Alone, Jan wanted to create a workspace for himself and in the future for his friends, that is culturally unique and incomparable.
                 <br /><br />
                 The goal is to connect the world of developers with the world of system engineers as good as possible. This bridge is made possible by distinctive software and system engineering knowledge.
                 <br /><br />
