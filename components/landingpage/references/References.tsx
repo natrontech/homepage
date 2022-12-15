@@ -14,11 +14,6 @@ export default function References() {
             link: "https://brf-solutions.ch",
             image: "/images/firms/brf-solutions.jpeg"
         },
-        {
-            name: "Bedag Informatik AG",
-            link: "https://bedag.ch",
-            image: "/images/firms/bedag.png"
-        }
     ]
     return (
         <div
