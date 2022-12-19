@@ -5,11 +5,10 @@ export const ServiceDescriptionContent = () => {
         <div
             className="text-lg"
         >
-            <strong>Natron</strong> helps build and optimize Kubernetes cloud infrastructure.
-            The start-up from <strong>Bern</strong> (Switzerland) deals with all edge topics in the area of the Cloud Native Computing Foundation (CNCF).
-            In addition, migration projects from legacy software to cloud-enabled Kubernetes applications are carried out and supported.
-            With know-how in software development, Natron supports developers in this process.
-            Dynamic and goal-oriented project management ultimately leads to a final solution.
+            <strong>Natron</strong> is a start-up based in <strong>Bern</strong>, Switzerland that specializes in building and optimizing Kubernetes cloud infrastructure. 
+            As experts in the Cloud Native Computing Foundation (CNCF) and software development, we are equipped to support developers in migrating legacy software to <strong>cloud-enabled</strong> Kubernetes applications. 
+            Our dynamic and goal-oriented project management approach ensures that we deliver a final solution that meets our clients needs.<br/><br/>
+            Let <strong>Natron</strong> help you navigate the complex world of cloud computing and achieve your business objectives.
             <br /><br />
             <hr
                 className="border-2"
@@ -42,16 +41,18 @@ export const ServiceCloudReadyContent = (type: ContentType) => {
             return "We setup your cloud infrastructure the right way. You can focus on the development of your application."
         case ContentType.ContentLong:
             return `
-            We design, build and automate stable IT infrastructures based on Kubernetes and support the maintenance and lifecycle management of existing environments.
-            Our services are based on the principles of the Cloud Native Computing Foundation (CNCF). 
-            This enables us to provide a stable and secure environment for your application.<br/><br/>
-            The main Kubernetes provider is Google Kubernetes Engine (GKE).
-            Google developed Kubernetes, a platform for containerized applications, and GKE is the managed service that provides a highly available, high-performance, and cost-effective container hosting environment.
-            In addition, GKE can run in the region of your choice.<br /> (Default: <strong>europe-west6</strong> -> Zurich)
-            <br /><br />
-            For the application to perform on this platform, it must be "cloud ready".
-            We base the design and development of cloud native applications on the 12 Factor App Manifesto. Points such as scalability, robustness, fault tolerance and self-healing are central to this.
-`
+            At <strong>Natron</strong>, we are passionate about helping businesses navigate the complex world of IT infrastructure. 
+            Our team specializes in designing, building, and automating stable systems using Kubernetes, with a focus on cloud native computing and the principles of the <strong>Cloud Native Computing Foundation (CNCF)</strong>.
+            <br/><br/>
+            Our main Kubernetes provider is <strong>Google Kubernetes Engine (GKE)</strong>, a highly available and cost-effective service that can run in the region of your choice (default: <strong>Europe-West6 in Zurich</strong>). 
+            To ensure optimal performance on this platform, we follow the principles of the <strong>12 Factor App Manifesto</strong> in the design and development of cloud native applications, focusing on scalability, robustness, fault tolerance, and self-healing.
+            <br/><br/>
+            In addition to building cloud-based IT infrastructures, <strong>Natron</strong> is also equipped to design and build on-premises Kubernetes infrastructure. 
+            No matter where you choose to host your IT systems, our team is dedicated to providing ongoing maintenance and lifecycle management to ensure that they are stable and secure for your applications.
+            <br/><br/>
+            At <strong>Natron</strong>, we are committed to providing the highest quality service and support to help your business thrive. 
+            Contact us today to learn more about how we can help you achieve your IT goals.
+            `
         default:
             return null
     }
@@ -65,9 +66,13 @@ export const ServiceContainerizationContent = (type: ContentType) => {
             return "We help you to containerize your legacy application and deploy it to the cloud. Join the movement!"
         case ContentType.ContentLong:
             return `
-            Containers are on everyone's lips today and they are essential to bring your application to the cloud. Containerization of the application is a central task and is largely influenced by the software architecture. Security considerations in this process are also extremely important to ensure that the attack vector on your application is as small as possible. 
-            <br /><br />
-            Once the application is packaged in a container, CI/CD can be used to automate the development steps very conveniently. There are no limits to what can be done.
+            <strong>Containers</strong> have become a popular topic in the tech industry, and for good reason - they are an essential tool for bringing applications to the cloud. 
+            At <strong>Natron</strong>, we understand the importance of properly containerizing your application, and we prioritize security considerations to minimize potential attack vectors.
+            <br/><br/>
+            Once your application has been packaged in a container, our team can assist with implementing <strong>CI/CD pipelines</strong> to automate the development process. 
+            The possibilities are endless when it comes to automating and streamlining your workflow. 
+            <br/><br/>
+            Contact us to learn more about how we can help you take advantage of the benefits of containerization and CI/CD.
             `
         default:
             return null
@@ -82,14 +87,18 @@ export const SoftwareEngineeringContent = (type: ContentType) => {
             return "We help you to build and design your application with the right tools and architecture."
         case ContentType.ContentLong:
             return `
-            In the cloud and especially on Kubernetes, it is difficult to make the right software architecture decisions as a developer. 
-            Everything has to be planned and developed <strong>cloud ready / cloud native</strong> so that the full potential of the platform can be exploited.<br/><br/>
-            Here, it is recommended to choose the <strong>Twelve-Factor App</strong> path (<a href="https://12factor.net" target="_blank">https://12factor.net</a>). 
-            This method helps immensely in the development of an application for the cloud. 
-            <strong>Natron</strong> also advises and helps developers to migrate their application slowly from legacy to the cloud on the basis of this method. <br/><br/>
-            It is always a question of investment how this migration is done. 
-            Sometimes it makes sense to migrate apps that are not yet cloud-ready to Kubernetes and later to outsource individual parts of the application to individual micro-services. Here, the right sensitivity and the correct goal setting are crucial for success. 
-            <strong>Natron</strong> is there to help you with all these issues and support you along the way, because the cloud is no longer the future but reality.
+            As a developer, it can be challenging to make the right <strong>software architecture</strong> decisions when working in the cloud, especially on Kubernetes. 
+            At <strong>Natron</strong>, we understand the importance of planning and developing cloud-ready, cloud-native applications in order to fully leverage the capabilities of the platform.
+            <br/><br/>
+            To assist with this process, we recommend following the <strong>Twelve-Factor</strong> App method <strong>(https://12factor.net)</strong>. 
+            This method has been proven to help developers create applications that are well-suited for the cloud. 
+            We also offer guidance and support for developers looking to migrate their legacy applications to the cloud using this method.
+            <br/><br/>
+            Migrating to the cloud is often a question of <strong>investment</strong>, and there are different approaches that may make sense depending on the specific circumstances. 
+            For example, it may be beneficial to migrate an app to Kubernetes first and then gradually refactor it into individual <strong>microservices</strong>. 
+            At <strong>Natron</strong>, we are here to help you make informed decisions and set the right goals for your <strong>migration journey</strong>. 
+            <br/><br/>
+            With our expertise and support, you can confidently navigate the transition to the cloud, because it is no longer a future prospect, but a reality that you can take advantage of <strong>today</strong>.
             `
         default:
             return null
