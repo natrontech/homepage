@@ -154,8 +154,8 @@ export default function Technologies() {
             country: "USA",
         },
         {
-            name: "Discord",
-            link: "https://discord.gg",
+            name: "Slack",
+            link: "https://slack.com/",
             services: [
                 "Chat",
                 "Voice",
