@@ -27,6 +27,14 @@ export default function About() {
       email: "alex.fuhrer@natron.io",
       nickname: "THE NUMBERS JUGGLER",
     },
+    {
+      image: "/images/mates/svengerber.jpeg",
+      name: "Sven Gerber",
+      position: "Cloud Engineer",
+      email: "sven.gerber@natron.io",
+      nickname: "THE AUTOMATION CAPTAIN",
+      github: "svengerber",
+    },
   ];
   return (
     <div id="about" className="pt-20">
