@@ -38,7 +38,7 @@ export enum ContentType {
   ContentLong,
 }
 
-export const ServiceCloudReadyContent = (type: ContentType) => {
+export const ServiceConsulting = (type: ContentType) => {
   switch (type) {
     case ContentType.Title:
       return "Consulting";
@@ -49,7 +49,7 @@ export const ServiceCloudReadyContent = (type: ContentType) => {
   }
 };
 
-export const ServiceContainerizationContent = (type: ContentType) => {
+export const ServiceProjectManagement = (type: ContentType) => {
   switch (type) {
     case ContentType.Title:
       return "Project Management";
@@ -60,7 +60,7 @@ export const ServiceContainerizationContent = (type: ContentType) => {
   }
 };
 
-export const SoftwareEngineeringContent = (type: ContentType) => {
+export const ServiceManagedServices = (type: ContentType) => {
   switch (type) {
     case ContentType.Title:
       return "Managed Services";

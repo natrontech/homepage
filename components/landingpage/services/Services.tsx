@@ -1,9 +1,9 @@
 import ExportedImage from "next-image-export-optimizer";
 import {
   ContentType,
-  ServiceCloudReadyContent,
-  ServiceContainerizationContent,
-  SoftwareEngineeringContent,
+  ServiceConsulting,
+  ServiceManagedServices,
+  ServiceProjectManagement,
 } from "../../../content/services";
 import ServiceCard from "./ServiceCard";
 import ServiceDescription from "./ServiceDescription";
@@ -77,8 +77,8 @@ export default function Services() {
       <div className="grid lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-8">
         <ServiceCard
           image="/images/illustrations/consulting.png"
-          title={ServiceCloudReadyContent(ContentType.Title)}
-          description={ServiceCloudReadyContent(ContentType.ContentShort)}
+          title={ServiceConsulting(ContentType.Title)}
+          description={ServiceConsulting(ContentType.ContentShort)}
           buttonText="Contact us"
           onClick={() => {
             // link mailto:info@natron.io
@@ -87,8 +87,8 @@ export default function Services() {
         />
         <ServiceCard
           image="/images/illustrations/projects.png"
-          title={ServiceContainerizationContent(ContentType.Title)}
-          description={ServiceContainerizationContent(ContentType.ContentShort)}
+          title={ServiceProjectManagement(ContentType.Title)}
+          description={ServiceProjectManagement(ContentType.ContentShort)}
           buttonText="Contact us"
           onClick={() => {
             // link mailto:info@natron.io
@@ -97,8 +97,8 @@ export default function Services() {
         />
         <ServiceCard
           image="/images/illustrations/managed-service.png"
-          title={SoftwareEngineeringContent(ContentType.Title)}
-          description={SoftwareEngineeringContent(ContentType.ContentShort)}
+          title={ServiceManagedServices(ContentType.Title)}
+          description={ServiceManagedServices(ContentType.ContentShort)}
           buttonText="Contact us"
           onClick={() => {
             // link mailto:info@natron.io
