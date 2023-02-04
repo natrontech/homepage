@@ -45,7 +45,7 @@ export default function About() {
       <p className="text-lg mb-20 text-center text-gray-300">#risewithus</p>
       <div
         className={classNames(
-          mates.length == 2 ? "sm:grid-cols-2" : "lg:grid-cols-3",
+          mates.length % 2 == 0 ? "sm:grid-cols-2 sm:gap-24" : "lg:grid-cols-3",
           "grid grid-cols-1 gap-8"
         )}
       >
