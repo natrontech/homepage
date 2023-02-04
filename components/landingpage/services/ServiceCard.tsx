@@ -1,41 +1,24 @@
 import ExportedImage from "next-image-export-optimizer";
-import { useRouter } from "next/router";
 import Button, { ButtonType } from "../../general/Button";
 import Tilt from "react-parallax-tilt";
-import { useEffect, useState } from "react";
-import ServiceModal from "./ServiceModal";
 
 export default function ServiceCard({
   image,
   title,
   description,
-  longtext,
+  buttonText,
+  onClick,
 }: {
   image: string;
   title: string | null;
   description: string | null;
-  longtext: string | null;
+  buttonText: string;
+  onClick?: () => void;
 }) {
-  const router = useRouter();
-  const [showModal, setShowModal] = useState(false);
-
-  // on key escape, close modal
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        setShowModal(false);
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [showModal]);
-
   return (
     <div className="border-8 grid grid-rows-2 h-auto border-white sm:w-full xl:w-96 w-full m-auto">
       <div className=" row-span-1 sm:hover:scale-110 active:hover:scale-105 transition-all duration-150 ease-in-out">
-        <Tilt className="h-full">
+        <Tilt className="h-4/5 mt-5">
           <ExportedImage
             className="pointer-events-none"
             src={image}
@@ -54,16 +37,10 @@ export default function ServiceCard({
         </p>
         <Button
           buttonType={ButtonType.Primary}
-          buttonText="Learn More"
-          onClick={() => setShowModal(true)}
+          buttonText={buttonText}
+          onClick={onClick}
         />
       </div>
-      <ServiceModal
-        showModal={showModal}
-        setShowModal={setShowModal}
-        title={title}
-        longtext={longtext}
-      />
     </div>
   );
 }

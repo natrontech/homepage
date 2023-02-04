@@ -7,8 +7,6 @@ import {
 } from "../../../content/services";
 import ServiceCard from "./ServiceCard";
 import ServiceDescription from "./ServiceDescription";
-import ServiceModal from "./ServiceModal";
-
 export default function Services() {
   return (
     <div>
@@ -78,22 +76,34 @@ export default function Services() {
       </div>
       <div className="grid lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-8">
         <ServiceCard
-          image="/images/illustrations/cloud-migration.png"
+          image="/images/illustrations/consulting.png"
           title={ServiceCloudReadyContent(ContentType.Title)}
           description={ServiceCloudReadyContent(ContentType.ContentShort)}
-          longtext={ServiceCloudReadyContent(ContentType.ContentLong)}
+          buttonText="Contact us"
+          onClick={() => {
+            // link mailto:info@natron.io
+            window.open("mailto:info@natron.io", "_blank");
+          }}
         />
         <ServiceCard
-          image="/images/illustrations/container.png"
+          image="/images/illustrations/projects.png"
           title={ServiceContainerizationContent(ContentType.Title)}
           description={ServiceContainerizationContent(ContentType.ContentShort)}
-          longtext={ServiceContainerizationContent(ContentType.ContentLong)}
+          buttonText="Contact us"
+          onClick={() => {
+            // link mailto:info@natron.io
+            window.open("mailto:info@natron.io", "_blank");
+          }}
         />
         <ServiceCard
-          image="/images/illustrations/software-engineering.png"
+          image="/images/illustrations/managed-service.png"
           title={SoftwareEngineeringContent(ContentType.Title)}
           description={SoftwareEngineeringContent(ContentType.ContentShort)}
-          longtext={SoftwareEngineeringContent(ContentType.ContentLong)}
+          buttonText="Contact us"
+          onClick={() => {
+            // link mailto:info@natron.io
+            window.open("mailto:info@natron.io", "_blank");
+          }}
         />
       </div>
       <div className="pt-20">
