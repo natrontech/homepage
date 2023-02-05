@@ -1,14 +1,12 @@
 import ExportedImage from "next-image-export-optimizer";
 import {
   ContentType,
-  ServiceCloudReadyContent,
-  ServiceContainerizationContent,
-  SoftwareEngineeringContent,
+  ServiceConsulting,
+  ServiceManagedServices,
+  ServiceProjectManagement,
 } from "../../../content/services";
 import ServiceCard from "./ServiceCard";
 import ServiceDescription from "./ServiceDescription";
-import ServiceModal from "./ServiceModal";
-
 export default function Services() {
   return (
     <div>
@@ -78,22 +76,34 @@ export default function Services() {
       </div>
       <div className="grid lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-8">
         <ServiceCard
-          image="/images/illustrations/cloud-migration.png"
-          title={ServiceCloudReadyContent(ContentType.Title)}
-          description={ServiceCloudReadyContent(ContentType.ContentShort)}
-          longtext={ServiceCloudReadyContent(ContentType.ContentLong)}
+          image="/images/illustrations/consulting.png"
+          title={ServiceConsulting(ContentType.Title)}
+          description={ServiceConsulting(ContentType.ContentShort)}
+          buttonText="Contact us"
+          onClick={() => {
+            // link mailto:info@natron.io
+            window.open("mailto:info@natron.io", "_blank");
+          }}
         />
         <ServiceCard
-          image="/images/illustrations/container.png"
-          title={ServiceContainerizationContent(ContentType.Title)}
-          description={ServiceContainerizationContent(ContentType.ContentShort)}
-          longtext={ServiceContainerizationContent(ContentType.ContentLong)}
+          image="/images/illustrations/projects.png"
+          title={ServiceProjectManagement(ContentType.Title)}
+          description={ServiceProjectManagement(ContentType.ContentShort)}
+          buttonText="Contact us"
+          onClick={() => {
+            // link mailto:info@natron.io
+            window.open("mailto:info@natron.io", "_blank");
+          }}
         />
         <ServiceCard
-          image="/images/illustrations/software-engineering.png"
-          title={SoftwareEngineeringContent(ContentType.Title)}
-          description={SoftwareEngineeringContent(ContentType.ContentShort)}
-          longtext={SoftwareEngineeringContent(ContentType.ContentLong)}
+          image="/images/illustrations/managed-service.png"
+          title={ServiceManagedServices(ContentType.Title)}
+          description={ServiceManagedServices(ContentType.ContentShort)}
+          buttonText="Contact us"
+          onClick={() => {
+            // link mailto:info@natron.io
+            window.open("mailto:info@natron.io", "_blank");
+          }}
         />
       </div>
       <div className="pt-20">
