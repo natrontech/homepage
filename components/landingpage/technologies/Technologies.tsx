@@ -5,24 +5,14 @@ import { LinkIcon, ListIcon } from "../../../lib/Icons";
 export default function Technologies() {
   const technologies = [
     {
-      name: "ArgoCD",
-      link: "https://argoproj.github.io/cd/",
-      image: "/images/technologies/argocd.png",
-    },
-    {
-      name: "Cert-Manager",
-      link: "https://cert-manager.io",
-      image: "/images/technologies/certmanager.png",
-    },
-    {
       name: "FluxCD",
       link: "https://fluxcd.io",
       image: "/images/technologies/fluxcd.png",
     },
     {
-      name: "Grafana",
-      link: "https://grafana.com",
-      image: "/images/technologies/grafana.png",
+      name: "ArgoCD",
+      link: "https://argoproj.github.io/cd/",
+      image: "/images/technologies/argocd.png",
     },
     {
       name: "Kubernetes",
@@ -30,19 +20,19 @@ export default function Technologies() {
       image: "/images/technologies/kubernetes.png",
     },
     {
-      name: "Longhorn",
-      link: "https://longhorn.io",
-      image: "/images/technologies/longhorn.png",
+      name: "Grafana",
+      link: "https://grafana.com",
+      image: "/images/technologies/grafana.png",
     },
     {
-      name: "MetalLB",
-      link: "https://metallb.universe.tf",
-      image: "/images/technologies/metallb.png",
+      name: "Grafana Loki",
+      link: "https://grafana.com/oss/loki/",
+      image: "/images/technologies/loki.png",
     },
     {
-      name: "Nginx Ingress",
-      link: "https://www.nginx.com/products/nginx-controller",
-      image: "/images/technologies/nginx.png",
+      name: "Grafana Tempo",
+      link: "https://grafana.com/oss/tempo/",
+      image: "/images/technologies/tempo.png",
     },
     {
       name: "Prometheus",
@@ -50,14 +40,24 @@ export default function Technologies() {
       image: "/images/technologies/prometheus.png",
     },
     {
-      name: "RKE2",
-      link: "https://docs.rke2.io",
-      image: "/images/technologies/rke2.png",
+      name: "Cilium",
+      link: "https://cilium.io",
+      image: "/images/technologies/cilium.png",
+    },
+    {
+      name: "Nginx Ingress",
+      link: "https://www.nginx.com/products/nginx-controller",
+      image: "/images/technologies/nginx.png",
     },
     {
       name: "Teleport",
       link: "https://goteleport.com",
       image: "/images/technologies/teleport.png",
+    },
+    {
+      name: "Cert-Manager",
+      link: "https://cert-manager.io",
+      image: "/images/technologies/certmanager.png",
     },
     {
       name: "vCluster",
@@ -85,17 +85,23 @@ export default function Technologies() {
     {
       name: "Google",
       link: "https://cloud.google.com/",
-      services: [
-        "Google Workspace",
-        "Google Cloud Platform",
-        "Mail Service",
-        "Firebase",
-      ],
+      services: ["Google Cloud Platform", "Firebase"],
       country: "USA, europe-west6",
     },
     {
       name: "GitHub",
-      link: "https://github.com",
+      link: "https://github.com/natrontech",
+      services: [
+        "Open Source Projects",
+        "Source Code Management",
+        "Collaboration",
+        "Version Control",
+      ],
+      country: "USA",
+    },
+    {
+      name: "Gitlab",
+      link: "https://gitlab.com/natrontech",
       services: [
         "Source Code Management",
         "Collaboration",
@@ -124,14 +130,14 @@ export default function Technologies() {
       country: "Switzerland",
     },
     {
-      name: "Atlassian Jira / Confluence",
-      link: "https://www.atlassian.com",
+      name: "Linear",
+      link: "https://linear.app",
       services: [
         "Document Management",
         "Task Management",
         "Project Management",
       ],
-      country: "Australia",
+      country: "USA",
     },
     {
       name: "Figma",

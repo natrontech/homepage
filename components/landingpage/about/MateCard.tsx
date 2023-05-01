@@ -1,8 +1,6 @@
 import ExportedImage from "next-image-export-optimizer";
 import { useRouter } from "next/router";
-import Button, { ButtonType } from "../../general/Button";
 import Tilt from "react-parallax-tilt";
-import { useState } from "react";
 import { EmailHeartIcon } from "../../../lib/Icons";
 import { classNames } from "../../../lib/design";
 
@@ -31,8 +29,8 @@ export default function MateCard({
   return (
     <div className="border-8 border-white sm:w-full w-full m-auto">
       <a href={`mailto:${email}`} className="cursor-pointer">
-        <div className="h-128 sm:hover:scale-110 active:hover:scale-105 transition-all duration-150 ease-in-out">
-          <Tilt className="h-128">
+        <div className="h-128 sm:hover:scale-105 active:hover:scale-105 transition-all duration-150 ease-in-out">
+          <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} className="h-128">
             <ExportedImage
               className="pointer-events-none"
               src={image}
