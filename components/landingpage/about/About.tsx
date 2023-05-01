@@ -35,6 +35,14 @@ export default function About() {
       nickname: "THE AUTOMATION CAPTAIN",
       github: "svengerber",
     },
+    {
+      image: "/images/mates/joelhaeberli.jpeg",
+      name: "Joel Häberli",
+      position: "Software Architect",
+      email: "joel.haeberli@natron.io",
+      nickname: "THE ABSTRACTION HUNTER",
+      github: "Joel-Haeberli",
+    },
   ];
   return (
     <div id="about" className="pt-20">
