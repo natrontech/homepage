@@ -39,7 +39,7 @@ export default function Navigation(props: any) {
                   item.current
                     ? "inlined-text text-white"
                     : "outlined-text text-primary",
-                  "font-GilroyBold text-4b5 lg:text-xxl md:text-5xl cursor-pointer lg:tracking-wider tracking-widest lg:hover:text-white active:hover:text-white transition-all duration-150 sm:duration-300 ease-in-out"
+                  "font-GilroyBold text-4b5 lg:text-xxl md:text-5xl cursor-pointer lg:tracking-wider tracking-widest lg:hover:text-white active:hover:text-white transition-all duration-150 sm:duration-300 ease-in-out",
                 )}
                 onClick={() => {
                   router.push(item.link);

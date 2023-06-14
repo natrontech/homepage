@@ -19,7 +19,7 @@ const firebaseConfig = {
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApps()[0];
 
 const analytics = isSupported().then((yes) =>
-  yes ? getAnalytics() : console.log("Analytics not supported")
+  yes ? getAnalytics() : console.log("Analytics not supported"),
 );
 
 export { app, analytics };

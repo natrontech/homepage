@@ -42,7 +42,7 @@ export default function MateCard({
             <div
               className={classNames(
                 github ? "" : "hidden",
-                "absolute top-5 left-5"
+                "absolute top-5 left-5",
               )}
             >
               <svg

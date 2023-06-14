@@ -28,7 +28,7 @@ export default function Button({
           className={classNames(
             hoverAnimationClasses,
             defaultStyleClasses,
-            "bg-primary text-white"
+            "bg-primary text-white",
           )}
           onClick={onClick}
         >
@@ -41,7 +41,7 @@ export default function Button({
           className={classNames(
             hoverAnimationClasses,
             defaultStyleClasses,
-            "bg-white text-primary"
+            "bg-white text-primary",
           )}
           onClick={onClick}
         >
@@ -54,7 +54,7 @@ export default function Button({
           className={classNames(
             hoverAnimationClasses,
             defaultStyleClasses,
-            "border-primary border-4 text-primary"
+            "border-primary border-4 text-primary",
           )}
           onClick={onClick}
         >
@@ -67,7 +67,7 @@ export default function Button({
           className={classNames(
             hoverAnimationClasses,
             defaultStyleClasses,
-            "border-white border-4 text-white"
+            "border-white border-4 text-white",
           )}
           onClick={onClick}
         >

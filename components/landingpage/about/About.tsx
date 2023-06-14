@@ -54,7 +54,7 @@ export default function About() {
       <div
         className={classNames(
           mates.length % 2 == 0 ? "sm:grid-cols-2 sm:gap-24" : "lg:grid-cols-3",
-          "grid grid-cols-1 gap-8"
+          "grid grid-cols-1 gap-8",
         )}
       >
         {mates.length < 2 ? <div className="sm:block hidden" /> : null}

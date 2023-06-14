@@ -21,7 +21,7 @@ export default function Navbar(props: any) {
           isOpen
             ? "z-50 opacity-100 scale-100"
             : "opacity-0 scale-75 -z-50 translate-x-96",
-          "fixed top-5 left-5 transition-all duration-200 ease-in-out"
+          "fixed top-5 left-5 transition-all duration-200 ease-in-out",
         )}
       >
         <button
@@ -56,7 +56,7 @@ export default function Navbar(props: any) {
           isOpen
             ? "w-full h-full top-0 right-0"
             : "w-12 h-12 right-5 top-5 sm:right-10",
-          "fixed  z-10 bg-primary transition-all duration-150 ease-in-out rounded-s,"
+          "fixed  z-10 bg-primary transition-all duration-150 ease-in-out rounded-s,",
         )}
       ></div>
       <div
@@ -64,7 +64,7 @@ export default function Navbar(props: any) {
           isOpen
             ? "fixed top-0 left-0 w-full h-screen z-10 opacity-100 scale-100"
             : "opacity-0 scale-95 translate-x-full -z-50",
-          " h-screen w-full z-10 fixed overflow-hidden transition-all duration-200 ease-in-out"
+          " h-screen w-full z-10 fixed overflow-hidden transition-all duration-200 ease-in-out",
         )}
       >
         <Navigation setOpen={setOpen} />
