@@ -47,7 +47,7 @@ const Imprint = () => {
         <br />
         Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder
         anderen Dateien auf dieser Website, gehören ausschliesslich Natron Tech
-        GmbH oder den speziell genannten Rechteinhabern. Für die Reproduktion
+        AG oder den speziell genannten Rechteinhabern. Für die Reproduktion
         jeglicher Elemente ist die schriftliche Zustimmung des
         Urheberrechtsträgers im Voraus einzuholen. <br />
       </p>
