@@ -5,8 +5,8 @@ const Imprint = () => {
         Impressum
       </h1>
       <p className="py-10">
-        Natron Tech GmbH <br />
-        Weissenbühlweg 16 <br />
+        Natron Tech AG <br />
+        Sulgenrain 12 <br />
         Bern 3007 <br />
         Schweiz <br />
         <strong>E-Mail</strong>: info@natron.io <br />
@@ -15,7 +15,7 @@ const Imprint = () => {
         <br />
         Jan Lauber, Geschäftsführer <br />
         <br />
-        <strong>Name des Unternehmens</strong>: Natron Tech GmbH <br />
+        <strong>Name des Unternehmens</strong>: Natron Tech AG <br />
         <strong>Registrationsnummer</strong>: CHE-269.493.518 <br />
         <strong>Umsatzsteuer-Identifikationsnummer</strong>: CHE-269.493.518
         MWST <br />

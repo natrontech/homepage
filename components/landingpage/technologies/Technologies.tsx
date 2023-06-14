@@ -130,14 +130,14 @@ export default function Technologies() {
       country: "Switzerland",
     },
     {
-      name: "Linear",
-      link: "https://linear.app",
+      name: "Jira / Confluence",
+      link: "https://www.atlassian.com/",
       services: [
         "Document Management",
         "Task Management",
         "Project Management",
       ],
-      country: "USA",
+      country: "Australia",
     },
     {
       name: "Figma",
