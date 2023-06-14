@@ -32,7 +32,7 @@ export default function Footer(props: any) {
             info@natron.io
           </a>
           <p>
-            Weissenbühlweg 16 <br />
+            Sulgenrain 12 <br />
             3007 Bern
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function Footer(props: any) {
           </svg>
         </a>
         <a
-          href="https://www.linkedin.com/company/natron-gmbh"
+          href="https://www.linkedin.com/company/natron-tech"
           target="_blank"
           rel="noopener noreferrer"
           className="cursor-pointer"
