@@ -164,7 +164,7 @@ export default function Technologies() {
             technologies.length % 2 == 1
               ? "lg:grid-cols-3 sm:grid-cols-1"
               : "lg:grid-cols-2 sm:grid-cols-2",
-            "grid grid-cols-1 gap-4 sm:gap-10"
+            "grid grid-cols-1 gap-4 sm:gap-10",
           )}
         >
           {technologies.map((item: any, index: number) => {
