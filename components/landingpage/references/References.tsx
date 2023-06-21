@@ -5,14 +5,19 @@ import { classNames } from "../../../lib/design";
 export default function References() {
   const firms = [
     {
-      name: "Netrics",
-      link: "https://netrics.ch",
-      image: "/images/firms/netrics.png",
+      name: "Swisscom",
+      link: "https://swisscom.ch",
+      image: "/images/firms/swisscom.png",
     },
     {
       name: "BRF-Solutions",
       link: "https://brf-solutions.ch",
       image: "/images/firms/brf-solutions.png",
+    },
+    {
+      name: "Netrics",
+      link: "https://netrics.ch",
+      image: "/images/firms/netrics.png",
     },
     {
       name: "Golog",
@@ -40,7 +45,10 @@ export default function References() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="col-span-1 flex justify-center py-8 px-8 bg-transparent cursor-pointer">
+                <div className={classNames(
+                  index % 2 === 0 ? "bg-white" : "bg-primary",
+                  "col-span-1 flex justify-center py-8 px-8 cursor-pointer"
+                )}>
                   <div className="h-10 w-40 relative m-auto">
                     <ExportedImage
                       className="pointer-events-none"
