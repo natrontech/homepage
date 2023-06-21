@@ -5,6 +5,11 @@ import { classNames } from "../../../lib/design";
 export default function References() {
   const firms = [
     {
+      name: "Swisscom",
+      link: "https://swisscom.ch",
+      image: "/images/firms/swisscom.png",
+    },
+    {
       name: "Netrics",
       link: "https://netrics.ch",
       image: "/images/firms/netrics.png",
