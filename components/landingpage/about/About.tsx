@@ -43,6 +43,14 @@ export default function About() {
       nickname: "THE ABSTRACTION HUNTER",
       github: "Joel-Haeberli",
     },
+    {
+      image: "/images/mates/davidraez.jpeg",
+      name: "David Räz",
+      position: "Consultant | Sales",
+      email: "david.raez@natron.io",
+      nickname: "THE MARKET MAESTRO",
+      github: "davidraez",
+    }
   ];
   return (
     <div id="about" className="pt-20">
